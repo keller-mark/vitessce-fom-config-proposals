@@ -6,8 +6,8 @@ While the upgrading will ultimately occur automatically, it may be a useful exer
 The files with `.debug.json` suffixes have been obtained by adding the `debug=true` URL parameter to ensure that we are doing these comparisons both before and after view config initialization.
 
 Existing configs will be on the `main` branch.
-Proposed configs will be on the `fom` branch to facilitate diffing with `main`.
+Proposed configs will be on separate branches to facilitate diffing with `main`.
 
-[Compare](https://github.com/keller-mark/vitessce-fom-config-proposals/compare/main...fom)
+[Compare](https://github.com/keller-mark/vitessce-fom-config-proposals/compare/main...keller-mark/fom)
 
 Here I will not try to [break apart the spatial layers](https://github.com/vitessce/vitessce/issues/830) as I think that can be proposed/tackled independently.
