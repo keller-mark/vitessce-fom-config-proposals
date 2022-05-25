@@ -1,7 +1,7 @@
 {
   "name": "Codeluppi et al., Nature Methods 2018",
   "description": "Spatial organization of the somatosensory cortex revealed by osmFISH",
-  "version": "1.0.9",
+  "version": "1.0.X",
   "initStrategy": "auto",
   "datasets": [
     {

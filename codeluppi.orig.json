@@ -1,7 +1,7 @@
 {
   "name": "Codeluppi et al., Nature Methods 2018",
   "description": "Spatial organization of the somatosensory cortex revealed by osmFISH",
-  "version": "1.0.9",
+  "version": "1.0.X",
   "initStrategy": "auto",
   "datasets": [
     {
@@ -9,14 +9,46 @@
       "name": "Codeluppi",
       "files": [
         {
-          "type": "cells",
+          "type": "obsEmbedding",
           "fileType": "cells.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "t-SNE"
+          }
         },
         {
-          "type": "cell-sets",
+          "type": "obsEmbedding",
+          "fileType": "cells.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "PCA"
+          }
+        },
+        {
+          "type": "obsLocations",
+          "fileType": "cells.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "type": "obsSegmentations",
+          "fileType": "cells.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "type": "obsSets",
           "fileType": "cell-sets.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "type": "raster",
@@ -24,9 +56,29 @@
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.raster.json"
         },
         {
-          "type": "molecules",
+          "type": "obsIndex",
           "fileType": "molecules.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
+          "coordinationValues": {
+            "obsType": "molecule"
+          }
+        },
+        {
+          "type": "obsColumn",
+          "fileType": "molecules.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
+          "coordinationValues": {
+            "obsType": "molecule",
+            "featureType": "gene"
+          }
+        },
+        {
+          "type": "obsLocations",
+          "fileType": "molecules.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
+          "coordinationValues": {
+            "obsType": "molecule"
+          }
         },
         {
           "type": "neighborhoods",
@@ -34,15 +86,46 @@
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.neighborhoods.json"
         },
         {
-          "type": "expression-matrix",
+          "type": "obsIndex",
           "fileType": "clusters.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "type": "featureIndex",
+          "fileType": "clusters.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
+          "coordinationValues": {
+            "featureType": "gene"
+          }
+        },
+        {
+          "type": "obsFeatureMatrix",
+          "fileType": "clusters.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "gene",
+            "featureValueType": "expression"
+          }
         }
       ]
     }
   ],
   "public": true,
   "coordinationSpace": {
+    "obsType": {
+      "A": "cell",
+      "B": "molecule"
+    },
+    "featureType": {
+      "A": "gene"
+    },
+    "featureValueType": {
+      "A": "expression"
+    },
     "embeddingZoom": {
       "PCA": 0,
       "TSNE": 0.75
@@ -78,6 +161,16 @@
       "y": 1,
       "w": 2,
       "h": 4,
+      "coordinationScopes": {
+        "spatialLayerType": ["segmentation", "point", "raster"]
+      },
+      "coordinationScopesBy": {
+        "spatialLayerType": {
+          "obsType": { "segmentation": "cell", "point": "molecule" },
+          "featureType": { "segmentation": "gene", "point": "gene" },
+          "featureValueType": { "segmentation": "expression" }
+        }
+      },
       "props": {
         "globalDisable3d": true,
         "disableChannelsIfRgbDetected": true
@@ -95,7 +188,15 @@
       "coordinationScopes": {
         "spatialZoom": "A",
         "spatialTargetX": "A",
-        "spatialTargetY": "A"
+        "spatialTargetY": "A",
+        "spatialLayerType": ["segmentation", "point", "raster"]
+      },
+      "coordinationScopesBy": {
+        "spatialLayerType": {
+          "obsType": { "segmentation": "cell", "point": "molecule" },
+          "featureType": { "segmentation": "gene", "point": "gene" },
+          "featureValueType": { "segmentation": "expression" }
+        }
       },
       "x": 2,
       "y": 0,
@@ -104,6 +205,9 @@
     },
     {
       "component": "genes",
+      "coordinationScopes": {
+        "featureType": "gene"
+      },
       "x": 9,
       "y": 0,
       "w": 3,
@@ -111,6 +215,9 @@
     },
     {
       "component": "cellSets",
+      "coordinationScopes": {
+        "obsType": "cell"
+      },
       "x": 9,
       "y": 3,
       "w": 3,
@@ -118,6 +225,11 @@
     },
     {
       "component": "heatmap",
+      "coordinationScopes": {
+        "obsType": "cell",
+        "featureType": "gene",
+        "featureValueType": "expression"
+      },
       "props": {
         "transpose": true
       },
@@ -128,6 +240,11 @@
     },
     {
       "component": "cellSetExpression",
+      "coordinationScopes": {
+        "obsType": "cell",
+        "featureType": "gene",
+        "featureValueType": "expression"
+      },
       "x": 7,
       "y": 4,
       "w": 5,
@@ -136,6 +253,9 @@
     {
       "component": "scatterplot",
       "coordinationScopes": {
+        "obsType": "cell",
+        "featureType": "gene",
+        "featureValueType": "expression",
         "embeddingType": "PCA",
         "embeddingZoom": "PCA"
       },
@@ -147,6 +267,9 @@
     {
       "component": "scatterplot",
       "coordinationScopes": {
+        "obsType": "cell",
+        "featureType": "gene",
+        "featureValueType": "expression",
         "embeddingType": "TSNE",
         "embeddingZoom": "TSNE"
       },
