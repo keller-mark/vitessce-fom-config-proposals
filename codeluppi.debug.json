@@ -1,0 +1,986 @@
+{
+  "name": "Codeluppi et al., Nature Methods 2018",
+  "description": "Spatial organization of the somatosensory cortex revealed by osmFISH",
+  "version": "1.0.9",
+  "initStrategy": "auto",
+  "datasets": [
+    {
+      "uid": "codeluppi",
+      "name": "Codeluppi",
+      "files": [
+        {
+          "type": "cells",
+          "fileType": "cells.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json"
+        },
+        {
+          "type": "cell-sets",
+          "fileType": "cell-sets.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json"
+        },
+        {
+          "type": "raster",
+          "fileType": "raster.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.raster.json"
+        },
+        {
+          "type": "molecules",
+          "fileType": "molecules.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json"
+        },
+        {
+          "type": "neighborhoods",
+          "fileType": "neighborhoods.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.neighborhoods.json"
+        },
+        {
+          "type": "expression-matrix",
+          "fileType": "clusters.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json"
+        }
+      ]
+    }
+  ],
+  "public": true,
+  "coordinationSpace": {
+    "embeddingZoom": {
+      "PCA": 0.2732510229584591,
+      "TSNE": 1.4115535636756307
+    },
+    "embeddingType": {
+      "PCA": "PCA",
+      "TSNE": "t-SNE"
+    },
+    "spatialZoom": {
+      "A": -5.5,
+      "B": null
+    },
+    "spatialTargetX": {
+      "A": 16000,
+      "B": null
+    },
+    "spatialTargetY": {
+      "A": 20000,
+      "B": null
+    },
+    "dataset": {
+      "A": "codeluppi"
+    },
+    "embeddingRotation": {
+      "A": 0
+    },
+    "embeddingTargetX": {
+      "A": 129.08,
+      "B": -7.396636962890625
+    },
+    "embeddingTargetY": {
+      "A": -112.77000000000001,
+      "B": -0.9676780700683594
+    },
+    "embeddingTargetZ": {
+      "A": 0,
+      "B": 0
+    },
+    "embeddingCellSetPolygonsVisible": {
+      "A": false,
+      "B": false
+    },
+    "embeddingCellSetLabelsVisible": {
+      "A": false,
+      "B": false
+    },
+    "embeddingCellSetLabelSize": {
+      "A": 14,
+      "B": 14
+    },
+    "embeddingCellRadius": {
+      "A": 1,
+      "B": 1
+    },
+    "embeddingCellRadiusMode": {
+      "A": "auto"
+    },
+    "embeddingCellOpacity": {
+      "A": 1,
+      "B": 1
+    },
+    "embeddingCellOpacityMode": {
+      "A": "auto"
+    },
+    "spatialRotation": {
+      "A": 0
+    },
+    "spatialTargetZ": {
+      "A": null
+    },
+    "spatialRotationX": {
+      "A": null
+    },
+    "spatialRotationY": {
+      "A": null
+    },
+    "spatialRotationZ": {
+      "A": null
+    },
+    "spatialRotationOrbit": {
+      "A": 0
+    },
+    "spatialOrbitAxis": {
+      "A": "Y"
+    },
+    "spatialAxisFixed": {
+      "A": false
+    },
+    "heatmapZoomX": {
+      "A": 0
+    },
+    "heatmapZoomY": {
+      "A": 0
+    },
+    "heatmapTargetX": {
+      "A": 0
+    },
+    "heatmapTargetY": {
+      "A": 0
+    },
+    "cellFilter": {
+      "A": null
+    },
+    "cellHighlight": {
+      "A": null
+    },
+    "cellSetSelection": {
+      "A": [
+        [
+          "Cell Type Annotations",
+          "Astrocyte"
+        ],
+        [
+          "Cell Type Annotations",
+          "Brain immune"
+        ],
+        [
+          "Cell Type Annotations",
+          "Excitatory neurons"
+        ],
+        [
+          "Cell Type Annotations",
+          "Inhibitory neurons"
+        ],
+        [
+          "Cell Type Annotations",
+          "Oligodendrocytes"
+        ],
+        [
+          "Cell Type Annotations",
+          "Vasculature"
+        ],
+        [
+          "Cell Type Annotations",
+          "Ventricle"
+        ]
+      ]
+    },
+    "cellSetHighlight": {
+      "A": null
+    },
+    "cellSetColor": {
+      "A": [
+        {
+          "path": [
+            "Cell Type Annotations"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Astrocyte"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Astrocyte",
+            "Astrocyte Gfap"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Astrocyte",
+            "Astrocyte Mfge8"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Brain immune"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Brain immune",
+            "Microglia"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Brain immune",
+            "Perivascular Macrophages"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Hippocampus"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Pyramidal Cpne5"
+          ],
+          "color": [
+            221,
+            204,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Pyramidal Kcnip2"
+          ],
+          "color": [
+            204,
+            102,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Pyramidal L2-3"
+          ],
+          "color": [
+            136,
+            34,
+            85
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Pyramidal L2-3 L5"
+          ],
+          "color": [
+            170,
+            68,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Pyramidal L3-4"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Pyramidal L5"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "Pyramidal L6"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Excitatory neurons",
+            "pyramidal L4"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons",
+            "Inhibitory CP"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons",
+            "Inhibitory Cnr1"
+          ],
+          "color": [
+            221,
+            204,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons",
+            "Inhibitory Crhbp"
+          ],
+          "color": [
+            204,
+            102,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons",
+            "Inhibitory IC"
+          ],
+          "color": [
+            136,
+            34,
+            85
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons",
+            "Inhibitory Kcnip2"
+          ],
+          "color": [
+            170,
+            68,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons",
+            "Inhibitory Pthlh"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Inhibitory neurons",
+            "Inhibitory Vip"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Oligodendrocytes"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Oligodendrocytes",
+            "Oligodendrocyte COP"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Oligodendrocytes",
+            "Oligodendrocyte MF"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Oligodendrocytes",
+            "Oligodendrocyte Mature"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Oligodendrocytes",
+            "Oligodendrocyte NF"
+          ],
+          "color": [
+            221,
+            204,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Oligodendrocytes",
+            "Oligodendrocyte Precursor cells"
+          ],
+          "color": [
+            204,
+            102,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Vasculature"
+          ],
+          "color": [
+            221,
+            204,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Vasculature",
+            "Endothelial"
+          ],
+          "color": [
+            136,
+            34,
+            85
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Vasculature",
+            "Endothelial 1"
+          ],
+          "color": [
+            170,
+            68,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Vasculature",
+            "Pericytes"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Vasculature",
+            "Vascular Smooth Muscle"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Ventricle"
+          ],
+          "color": [
+            204,
+            102,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Ventricle",
+            "C. Plexus"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell Type Annotations",
+            "Ventricle",
+            "Ependymal"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        }
+      ]
+    },
+    "geneFilter": {
+      "A": null
+    },
+    "geneHighlight": {
+      "A": null
+    },
+    "geneSelection": {
+      "A": null
+    },
+    "geneExpressionColormap": {
+      "A": "plasma"
+    },
+    "geneExpressionTransform": {
+      "A": null
+    },
+    "geneExpressionColormapRange": {
+      "A": [
+        0,
+        1
+      ]
+    },
+    "cellColorEncoding": {
+      "A": "cellSetSelection"
+    },
+    "spatialRasterLayers": {
+      "A": [
+        {
+          "type": "raster",
+          "index": 0,
+          "visible": true,
+          "colormap": null,
+          "opacity": 1,
+          "domainType": "Min/Max",
+          "transparentColor": null,
+          "renderingMode": "Additive",
+          "use3d": false,
+          "channels": [
+            {
+              "selection": {
+                "channel": 0
+              },
+              "color": [
+                0,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                1,
+                1473
+              ]
+            },
+            {
+              "selection": {
+                "channel": 1
+              },
+              "color": [
+                0,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                1,
+                447
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spatialCellsLayer": {
+      "A": {
+        "opacity": 1,
+        "radius": 50,
+        "visible": true,
+        "stroked": false
+      }
+    },
+    "spatialMoleculesLayer": {
+      "A": {
+        "opacity": 1,
+        "radius": 20,
+        "visible": true
+      }
+    },
+    "spatialNeighborhoodsLayer": {
+      "A": {
+        "visible": false
+      }
+    },
+    "additionalCellSets": {
+      "A": null
+    },
+    "moleculeHighlight": {
+      "A": null
+    }
+  },
+  "layout": [
+    {
+      "component": "description",
+      "props": {
+        "description": "Codeluppi et al., Nature Methods 2018: Spatial organization of the somatosensory cortex revealed by osmFISH"
+      },
+      "x": 0,
+      "y": 0,
+      "w": 2,
+      "h": 1,
+      "coordinationScopes": {
+        "dataset": "A",
+        "spatialRasterLayers": "A"
+      }
+    },
+    {
+      "component": "layerController",
+      "x": 0,
+      "y": 1,
+      "w": 2,
+      "h": 4,
+      "props": {
+        "globalDisable3d": true,
+        "disableChannelsIfRgbDetected": true
+      },
+      "coordinationScopes": {
+        "dataset": "A",
+        "spatialZoom": "B",
+        "spatialTargetX": "B",
+        "spatialTargetY": "B",
+        "spatialTargetZ": "A",
+        "spatialRotationX": "A",
+        "spatialRotationY": "A",
+        "spatialRotationZ": "A",
+        "spatialRotationOrbit": "A",
+        "spatialOrbitAxis": "A",
+        "spatialRasterLayers": "A",
+        "spatialCellsLayer": "A",
+        "spatialMoleculesLayer": "A",
+        "spatialNeighborhoodsLayer": "A"
+      }
+    },
+    {
+      "component": "status",
+      "x": 0,
+      "y": 5,
+      "w": 2,
+      "h": 1,
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellHighlight": "A",
+        "cellSetHighlight": "A",
+        "geneHighlight": "A",
+        "moleculeHighlight": "A"
+      }
+    },
+    {
+      "component": "spatial",
+      "coordinationScopes": {
+        "spatialZoom": "A",
+        "spatialTargetX": "A",
+        "spatialTargetY": "A",
+        "dataset": "A",
+        "spatialRotation": "A",
+        "spatialTargetZ": "A",
+        "spatialRotationX": "A",
+        "spatialRotationY": "A",
+        "spatialRotationZ": "A",
+        "spatialRotationOrbit": "A",
+        "spatialOrbitAxis": "A",
+        "spatialAxisFixed": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "spatialRasterLayers": "A",
+        "spatialCellsLayer": "A",
+        "spatialMoleculesLayer": "A",
+        "spatialNeighborhoodsLayer": "A",
+        "additionalCellSets": "A",
+        "moleculeHighlight": "A"
+      },
+      "x": 2,
+      "y": 0,
+      "w": 4,
+      "h": 4
+    },
+    {
+      "component": "genes",
+      "x": 9,
+      "y": 0,
+      "w": 3,
+      "h": 2,
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "geneFilter": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "cellColorEncoding": "A"
+      }
+    },
+    {
+      "component": "cellSets",
+      "x": 9,
+      "y": 3,
+      "w": 3,
+      "h": 2,
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneSelection": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      }
+    },
+    {
+      "component": "heatmap",
+      "props": {
+        "transpose": true
+      },
+      "x": 2,
+      "y": 4,
+      "w": 5,
+      "h": 2,
+      "coordinationScopes": {
+        "dataset": "A",
+        "heatmapZoomX": "A",
+        "heatmapZoomY": "A",
+        "heatmapTargetX": "A",
+        "heatmapTargetY": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneFilter": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      }
+    },
+    {
+      "component": "cellSetExpression",
+      "x": 7,
+      "y": 4,
+      "w": 5,
+      "h": 2,
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneSelection": "A",
+        "geneExpressionTransform": "A",
+        "additionalCellSets": "A"
+      }
+    },
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "embeddingType": "PCA",
+        "embeddingZoom": "PCA",
+        "dataset": "A",
+        "embeddingRotation": "A",
+        "embeddingTargetX": "A",
+        "embeddingTargetY": "A",
+        "embeddingTargetZ": "A",
+        "embeddingCellSetPolygonsVisible": "A",
+        "embeddingCellSetLabelsVisible": "A",
+        "embeddingCellSetLabelSize": "A",
+        "embeddingCellRadius": "A",
+        "embeddingCellRadiusMode": "A",
+        "embeddingCellOpacity": "A",
+        "embeddingCellOpacityMode": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "x": 6,
+      "y": 0,
+      "w": 3,
+      "h": 2
+    },
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "embeddingType": "TSNE",
+        "embeddingZoom": "TSNE",
+        "dataset": "A",
+        "embeddingRotation": "A",
+        "embeddingTargetX": "B",
+        "embeddingTargetY": "B",
+        "embeddingTargetZ": "B",
+        "embeddingCellSetPolygonsVisible": "B",
+        "embeddingCellSetLabelsVisible": "B",
+        "embeddingCellSetLabelSize": "B",
+        "embeddingCellRadius": "B",
+        "embeddingCellRadiusMode": "A",
+        "embeddingCellOpacity": "B",
+        "embeddingCellOpacityMode": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "x": 6,
+      "y": 2,
+      "w": 3,
+      "h": 2
+    }
+  ]
+}
