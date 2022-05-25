@@ -114,7 +114,6 @@
       ]
     }
   ],
-  "public": true,
   "coordinationSpace": {
     "obsType": {
       "A": "cell",
