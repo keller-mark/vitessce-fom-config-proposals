@@ -3,6 +3,19 @@
     "dataset": {
       "A": "A"
     },
+    "obsType": {
+      "OT1": "cell"
+    },
+    "featureType": {
+      "FT1": "antigen"
+    },
+    "featureValueType": {
+      "FVT1": "quantification"
+    },
+    "spatialLayerType": {
+      "SLT1": "segmentation",
+      "SLT2": "raster"
+    },
     "embeddingType": {
       "A": "t-SNE"
     }
@@ -13,103 +26,122 @@
         {
           "fileType": "anndata-cells.zarr",
           "options": {
-            "factors": [
-              "obs/Cell K-Means [tSNE_All_Features]",
-              "obs/Cell K-Means [Mean-All-SubRegions] Expression",
-              "obs/Cell K-Means [Mean] Expression",
-              "obs/Cell K-Means [Shape-Vectors]",
-              "obs/Cell K-Means [Texture]",
-              "obs/Cell K-Means [Total] Expression",
-              "obs/Cell K-Means [Covariance] Expression"
-            ],
-            "mappings": {
-              "t-SNE": {
-                "dims": [
-                  0,
-                  1
-                ],
-                "key": "obsm/tsne"
-              }
-            },
-            "xy": "obsm/xy"
+            "path": "obsm/tsne",
+            "dims": [0, 1]
           },
-          "type": "cells",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+          "type": "obsEmbedding",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "t-SNE"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obsm/xy"
+          },
+          "type": "obsLocations",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "fileType": "anndata-cell-sets.zarr",
           "options": [
             {
-              "groupName": "Cell K-Means [tSNE_All_Features]",
-              "setName": "obs/Cell K-Means [tSNE_All_Features]"
+              "name": "Cell K-Means [tSNE_All_Features]",
+              "path": "obs/Cell K-Means [tSNE_All_Features]"
             },
             {
-              "groupName": "Cell K-Means [Mean-All-SubRegions] Expression",
-              "setName": "obs/Cell K-Means [Mean-All-SubRegions] Expression"
+              "name": "Cell K-Means [Mean-All-SubRegions] Expression",
+              "path": "obs/Cell K-Means [Mean-All-SubRegions] Expression"
             },
             {
-              "groupName": "Cell K-Means [Mean] Expression",
-              "setName": "obs/Cell K-Means [Mean] Expression"
+              "name": "Cell K-Means [Mean] Expression",
+              "path": "obs/Cell K-Means [Mean] Expression"
             },
             {
-              "groupName": "Cell K-Means [Shape-Vectors]",
-              "setName": "obs/Cell K-Means [Shape-Vectors]"
+              "name": "Cell K-Means [Shape-Vectors]",
+              "path": "obs/Cell K-Means [Shape-Vectors]"
             },
             {
-              "groupName": "Cell K-Means [Texture]",
-              "setName": "obs/Cell K-Means [Texture]"
+              "name": "Cell K-Means [Texture]",
+              "path": "obs/Cell K-Means [Texture]"
             },
             {
-              "groupName": "Cell K-Means [Total] Expression",
-              "setName": "obs/Cell K-Means [Total] Expression"
+              "name": "Cell K-Means [Total] Expression",
+              "path": "obs/Cell K-Means [Total] Expression"
             },
             {
-              "groupName": "Cell K-Means [Covariance] Expression",
-              "setName": "obs/Cell K-Means [Covariance] Expression"
+              "name": "Cell K-Means [Covariance] Expression",
+              "path": "obs/Cell K-Means [Covariance] Expression"
             }
           ],
-          "type": "cell-sets",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+          "type": "obsSets",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "fileType": "anndata-expression-matrix.zarr",
           "options": {
-            "matrix": "X"
+            "path": "obs/index"
           },
-          "type": "expression-matrix",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+          "type": "obsIndex",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
-          "fileType": "raster.json",
+          "fileType": "anndata-expression-matrix.zarr",
           "options": {
-            "images": [
-              {
-                "metadata": {
-                  "isBitmask": false,
-                  "omeTiffOffsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/expressions/reg1_stitched_expressions.offsets.json?token="
-                },
-                "name": "reg1_stitched_expressions",
-                "type": "ome-tiff",
-                "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/expressions/reg1_stitched_expressions.ome.tif?token="
-              },
-              {
-                "metadata": {
-                  "isBitmask": true,
-                  "omeTiffOffsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/mask/reg1_stitched_mask.offsets.json?token="
-                },
-                "name": "reg1_stitched_mask",
-                "type": "ome-tiff",
-                "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/mask/reg1_stitched_mask.ome.tif?token="
-              }
-            ],
-            "renderLayers": [
-              "reg1_stitched_expressions",
-              "reg1_stitched_mask"
-            ],
-            "schemaVersion": "0.0.2",
+            "path": "var/index"
+          },
+          "type": "featureIndex",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "featureType": "antigen"
+          }
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "path": "X"
+          },
+          "type": "obsFeatureMatrix",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "antigen",
+            "featureValueType": "expression"
+          }
+        },
+        {
+          "fileType": "raster.ome-tiff",
+          "options": {
+            "offsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/expressions/reg1_stitched_expressions.offsets.json?token=",
+            "name": "reg1_stitched_expressions",
             "usePhysicalSizeScaling": false
           },
-          "type": "raster"
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/expressions/reg1_stitched_expressions.ome.tif?token=",
+          "type": "image"
+        },
+        {
+          "fileType": "raster.ome-tiff",
+          "options": {
+            "offsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/mask/reg1_stitched_mask.offsets.json?token=",
+            "name": "reg1_stitched_mask",
+            "usePhysicalSizeScaling": false
+          },
+          "type": "obsSegmentations",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/mask/reg1_stitched_mask.ome.tif?token=",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         }
       ],
       "name": "SPRM",
@@ -122,7 +154,11 @@
     {
       "component": "spatial",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "spatialLayerType": ["SLT1", "SLT2"],
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1"
       },
       "h": 8,
       "w": 4,
@@ -133,6 +169,9 @@
       "component": "scatterplot",
       "coordinationScopes": {
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingType": "A"
       },
       "h": 8,
@@ -153,7 +192,11 @@
     {
       "component": "layerController",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "spatialLayerType": ["SLT1", "SLT2"],
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1"
       },
       "h": 8,
       "w": 3,
@@ -163,7 +206,8 @@
     {
       "component": "cellSets",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "obsType": "OT1"
       },
       "h": 7,
       "w": 2,
@@ -173,12 +217,10 @@
     {
       "component": "genes",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "featureType": "FT1"
       },
       "h": 5,
-      "props": {
-        "variablesLabelOverride": "antigen"
-      },
       "w": 2,
       "x": 10,
       "y": 0
@@ -186,12 +228,14 @@
     {
       "component": "heatmap",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1"
       },
       "h": 4,
       "props": {
-        "transpose": true,
-        "variablesLabelOverride": "antigen"
+        "transpose": true
       },
       "w": 7,
       "x": 3,

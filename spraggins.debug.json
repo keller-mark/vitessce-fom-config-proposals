@@ -9,7 +9,7 @@
       "name": "6840b32f-7528-4f6d-91be-92c9b0f96a1c",
       "files": [
         {
-          "type": "raster",
+          "type": "image",
           "fileType": "raster.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/spraggins/spraggins.raster.json"
         }
