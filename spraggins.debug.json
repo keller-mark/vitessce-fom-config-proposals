@@ -1,5 +1,5 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.X",
   "name": "Spraggins",
   "description": "High bit depth (uint16) multiplex immunofluorescence images of the kidney by the BIOmolecular Multimodal Imaging Center (BIOMIC) at Vanderbilt University",
   "public": true,
@@ -61,40 +61,40 @@
     "spatialAxisFixed": {
       "A": false
     },
-    "cellFilter": {
+    "obsFilter": {
       "A": null
     },
-    "cellHighlight": {
+    "obsHighlight": {
       "A": null
     },
-    "cellSetSelection": {
+    "obsSetSelection": {
       "A": null
     },
-    "cellSetHighlight": {
+    "obsSetHighlight": {
       "A": null
     },
-    "cellSetColor": {
+    "obsSetColor": {
       "A": null
     },
-    "geneHighlight": {
+    "featureHighlight": {
       "A": null
     },
-    "geneSelection": {
+    "featureSelection": {
       "A": null
     },
-    "geneExpressionColormap": {
+    "featureValueColormap": {
       "A": "plasma"
     },
-    "geneExpressionColormapRange": {
+    "featureValueColormapRange": {
       "A": [
         0,
         1
       ]
     },
-    "cellColorEncoding": {
+    "obsColorEncoding": {
       "A": "cellSetSelection"
     },
-    "spatialRasterLayers": {
+    "spatialRasterLayer": {
       "A": [
         {
           "type": "raster",
@@ -248,16 +248,16 @@
         }
       ]
     },
-    "spatialCellsLayer": {
+    "spatialSegmentationLayer": {
       "A": null
     },
-    "spatialMoleculesLayer": {
+    "spatialPointLayer": {
       "A": null
     },
-    "spatialNeighborhoodsLayer": {
+    "spatialNeighborhoodLayer": {
       "A": null
     },
-    "additionalCellSets": {
+    "additionalObsSets": {
       "A": null
     },
     "moleculeHighlight": {
@@ -294,21 +294,21 @@
         "spatialRotationOrbit": "A",
         "spatialOrbitAxis": "A",
         "spatialAxisFixed": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "spatialRasterLayers": "A",
-        "spatialCellsLayer": "A",
-        "spatialMoleculesLayer": "A",
-        "spatialNeighborhoodsLayer": "A",
-        "additionalCellSets": "A",
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "spatialRasterLayer": "A",
+        "spatialSegmentationLayer": "A",
+        "spatialPointLayer": "A",
+        "spatialNeighborhoodLayer": "A",
+        "additionalObsSets": "A",
         "moleculeHighlight": "A"
       }
     },
@@ -329,10 +329,10 @@
         "spatialRotationZ": "A",
         "spatialRotationOrbit": "A",
         "spatialOrbitAxis": "A",
-        "spatialRasterLayers": "A",
-        "spatialCellsLayer": "A",
-        "spatialMoleculesLayer": "A",
-        "spatialNeighborhoodsLayer": "A"
+        "spatialRasterLayer": "A",
+        "spatialSegmentationLayer": "A",
+        "spatialPointLayer": "A",
+        "spatialNeighborhoodLayer": "A"
       },
       "props": {
         "globalDisable3d": true,

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.X",
   "name": "Spraggins",
   "description": "High bit depth (uint16) multiplex immunofluorescence images of the kidney by the BIOmolecular Multimodal Imaging Center (BIOMIC) at Vanderbilt University",
   "public": true,

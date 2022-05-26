@@ -3,6 +3,20 @@
     "dataset": {
       "A": "A"
     },
+    "obsType": {
+      "OT1": "cell"
+    },
+    "featureType": {
+      "FT1": "gene",
+      "MG0": "marker_gene_0",
+      "MG1": "marker_gene_1",
+      "MG2": "marker_gene_2",
+      "MG3": "marker_gene_3",
+      "MG4": "marker_gene_4"
+    },
+    "featureValueType": {
+      "FVT1": "expression"
+    },
     "embeddingType": {
       "A": "UMAP"
     },
@@ -21,25 +35,25 @@
     "embeddingTargetZ": {
       "A": 0
     },
-    "embeddingCellSetPolygonsVisible": {
+    "embeddingObsSetPolygonsVisible": {
       "A": false
     },
-    "embeddingCellSetLabelsVisible": {
+    "embeddingObsSetLabelsVisible": {
       "A": false
     },
-    "embeddingCellSetLabelSize": {
+    "embeddingObsSetLabelSize": {
       "A": 14
     },
-    "embeddingCellRadius": {
+    "embeddingObsRadius": {
       "A": 1
     },
-    "embeddingCellRadiusMode": {
+    "embeddingObsRadiusMode": {
       "A": "auto"
     },
-    "embeddingCellOpacity": {
+    "embeddingObsOpacity": {
       "A": 1
     },
-    "embeddingCellOpacityMode": {
+    "embeddingObsOpacityMode": {
       "A": "auto"
     },
     "heatmapZoomX": {
@@ -54,13 +68,13 @@
     "heatmapTargetY": {
       "A": 0
     },
-    "cellFilter": {
+    "obsFilter": {
       "A": null
     },
-    "cellHighlight": {
+    "obsHighlight": {
       "A": null
     },
-    "cellSetSelection": {
+    "obsSetSelection": {
       "A": [
         [
           "Leiden",
@@ -124,10 +138,10 @@
         ]
       ]
     },
-    "cellSetHighlight": {
+    "obsSetHighlight": {
       "A": null
     },
-    "cellSetColor": {
+    "obsSetColor": {
       "A": [
         {
           "path": [
@@ -306,31 +320,31 @@
         }
       ]
     },
-    "geneFilter": {
+    "featureFilter": {
       "A": null
     },
-    "geneHighlight": {
+    "featureHighlight": {
       "A": null
     },
-    "geneSelection": {
+    "featureSelection": {
       "A": null
     },
-    "geneExpressionColormap": {
+    "featureValueColormap": {
       "A": "plasma"
     },
-    "geneExpressionTransform": {
+    "featureValueTransform": {
       "A": null
     },
-    "geneExpressionColormapRange": {
+    "featureValueColormapRange": {
       "A": [
         0,
         1
       ]
     },
-    "cellColorEncoding": {
+    "obsColorEncoding": {
       "A": "cellSetSelection"
     },
-    "additionalCellSets": {
+    "additionalObsSets": {
       "A": null
     }
   },
@@ -340,45 +354,125 @@
         {
           "fileType": "anndata-cells.zarr",
           "options": {
-            "factors": [
-              "obs/marker_gene_0",
-              "obs/marker_gene_1",
-              "obs/marker_gene_2",
-              "obs/marker_gene_3",
-              "obs/marker_gene_4"
-            ],
-            "mappings": {
-              "UMAP": {
-                "dims": [
-                  0,
-                  1
-                ],
-                "key": "obsm/X_umap"
-              }
-            }
+            "path": "obsm/X_umap",
+            "dims": [0, 1]
           },
-          "type": "cells",
-          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+          "type": "obsEmbedding",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "UMAP"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_0"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_0"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_1"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_1"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_2"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_2"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_3"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_3"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_4"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_4"
+          }
         },
         {
           "fileType": "anndata-cell-sets.zarr",
           "options": [
             {
-              "groupName": "Leiden",
-              "setName": "obs/leiden"
+              "name": "Leiden",
+              "path": "obs/leiden"
             }
           ],
-          "type": "cell-sets",
-          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+          "type": "obsSets",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "fileType": "anndata-expression-matrix.zarr",
           "options": {
-            "matrix": "X",
-            "matrixGeneFilter": "var/marker_genes_for_heatmap"
+            "path": "obs/index"
           },
-          "type": "expression-matrix",
-          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+          "type": "obsIndex",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "path": "var/index",
+            "filterTo": "var/marker_genes_for_heatmap"
+          },
+          "type": "featureIndex",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "featureType": "gene"
+          }
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "path": "X"
+          },
+          "type": "obsFeatureMatrix",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "gene",
+            "featureValueType": "expression"
+          }
         }
       ],
       "name": "c05a38c5210b870281b5aea01e290339",
@@ -392,30 +486,33 @@
       "component": "scatterplot",
       "coordinationScopes": {
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingType": "A",
         "embeddingZoom": "A",
         "embeddingRotation": "A",
         "embeddingTargetX": "A",
         "embeddingTargetY": "A",
         "embeddingTargetZ": "A",
-        "embeddingCellSetPolygonsVisible": "A",
-        "embeddingCellSetLabelsVisible": "A",
-        "embeddingCellSetLabelSize": "A",
-        "embeddingCellRadius": "A",
-        "embeddingCellRadiusMode": "A",
-        "embeddingCellOpacity": "A",
-        "embeddingCellOpacityMode": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "embeddingObsSetPolygonsVisible": "A",
+        "embeddingObsSetLabelsVisible": "A",
+        "embeddingObsSetLabelSize": "A",
+        "embeddingObsRadius": "A",
+        "embeddingObsRadiusMode": "A",
+        "embeddingObsOpacity": "A",
+        "embeddingObsOpacityMode": "A",
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "h": 6,
       "w": 4,
@@ -426,12 +523,15 @@
       "component": "cellSetExpression",
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneSelection": "A",
-        "geneExpressionTransform": "A",
-        "additionalCellSets": "A"
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureSelection": "A",
+        "featureValueTransform": "A",
+        "additionalObsSets": "A"
       },
       "h": 6,
       "w": 5,
@@ -442,12 +542,13 @@
       "component": "cellSets",
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneSelection": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "obsType": "OT1",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureSelection": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "h": 3,
       "w": 3,
@@ -458,11 +559,12 @@
       "component": "genes",
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "geneFilter": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "cellColorEncoding": "A"
+        "featureType": "FT1",
+        "obsSetSelection": "A",
+        "featureFilter": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "obsColorEncoding": "A"
       },
       "h": 3,
       "w": 3,
@@ -473,22 +575,25 @@
       "component": "heatmap",
       "coordinationScopes": {
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "heatmapZoomX": "A",
         "heatmapZoomY": "A",
         "heatmapTargetX": "A",
         "heatmapTargetY": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneFilter": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureFilter": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "h": 4,
       "w": 12,
@@ -497,5 +602,5 @@
     }
   ],
   "name": "c05a38c5210b870281b5aea01e290339",
-  "version": "1.0.9"
+  "version": "1.0.X"
 }

@@ -3,6 +3,20 @@
     "dataset": {
       "A": "A"
     },
+    "obsType": {
+      "OT1": "cell"
+    },
+    "featureType": {
+      "FT1": "gene",
+      "MG0": "marker_gene_0",
+      "MG1": "marker_gene_1",
+      "MG2": "marker_gene_2",
+      "MG3": "marker_gene_3",
+      "MG4": "marker_gene_4"
+    },
+    "featureValueType": {
+      "FVT1": "expression"
+    },
     "embeddingType": {
       "A": "UMAP"
     }
@@ -13,45 +27,125 @@
         {
           "fileType": "anndata-cells.zarr",
           "options": {
-            "factors": [
-              "obs/marker_gene_0",
-              "obs/marker_gene_1",
-              "obs/marker_gene_2",
-              "obs/marker_gene_3",
-              "obs/marker_gene_4"
-            ],
-            "mappings": {
-              "UMAP": {
-                "dims": [
-                  0,
-                  1
-                ],
-                "key": "obsm/X_umap"
-              }
-            }
+            "path": "obsm/X_umap",
+            "dims": [0, 1]
           },
-          "type": "cells",
-          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+          "type": "obsEmbedding",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "UMAP"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_0"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_0"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_1"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_1"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_2"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_2"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_3"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_3"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obs/marker_gene_4"
+          },
+          "type": "obsColumn",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "marker_gene_4"
+          }
         },
         {
           "fileType": "anndata-cell-sets.zarr",
           "options": [
             {
-              "groupName": "Leiden",
-              "setName": "obs/leiden"
+              "name": "Leiden",
+              "path": "obs/leiden"
             }
           ],
-          "type": "cell-sets",
-          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+          "type": "obsSets",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "fileType": "anndata-expression-matrix.zarr",
           "options": {
-            "matrix": "X",
-            "matrixGeneFilter": "var/marker_genes_for_heatmap"
+            "path": "obs/index"
           },
-          "type": "expression-matrix",
-          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+          "type": "obsIndex",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "path": "var/index",
+            "filterTo": "var/marker_genes_for_heatmap"
+          },
+          "type": "featureIndex",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "featureType": "gene"
+          }
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "path": "X"
+          },
+          "type": "obsFeatureMatrix",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "gene",
+            "featureValueType": "expression"
+          }
         }
       ],
       "name": "c05a38c5210b870281b5aea01e290339",
@@ -65,6 +159,9 @@
       "component": "scatterplot",
       "coordinationScopes": {
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingType": "A"
       },
       "h": 6,
@@ -75,7 +172,10 @@
     {
       "component": "cellSetExpression",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1"
       },
       "h": 6,
       "w": 5,
@@ -85,7 +185,8 @@
     {
       "component": "cellSets",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "obsType": "OT1"
       },
       "h": 3,
       "w": 3,
@@ -95,7 +196,8 @@
     {
       "component": "genes",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "featureType": "FT1"
       },
       "h": 3,
       "w": 3,
@@ -105,7 +207,10 @@
     {
       "component": "heatmap",
       "coordinationScopes": {
-        "dataset": "A"
+        "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1"
       },
       "h": 4,
       "w": 12,
@@ -114,5 +219,5 @@
     }
   ],
   "name": "c05a38c5210b870281b5aea01e290339",
-  "version": "1.0.9"
+  "version": "1.0.X"
 }
