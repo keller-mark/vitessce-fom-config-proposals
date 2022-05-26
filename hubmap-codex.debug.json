@@ -1,0 +1,976 @@
+{
+  "coordinationSpace": {
+    "dataset": {
+      "A": "A"
+    },
+    "embeddingType": {
+      "A": "t-SNE"
+    },
+    "embeddingZoom": {
+      "A": 27.210449169529603
+    },
+    "embeddingRotation": {
+      "A": 0
+    },
+    "embeddingTargetX": {
+      "A": 2.0508655000000008e-7
+    },
+    "embeddingTargetY": {
+      "A": -0.0000010742551700000003
+    },
+    "embeddingTargetZ": {
+      "A": 0
+    },
+    "embeddingCellSetPolygonsVisible": {
+      "A": false
+    },
+    "embeddingCellSetLabelsVisible": {
+      "A": false
+    },
+    "embeddingCellSetLabelSize": {
+      "A": 14
+    },
+    "embeddingCellRadius": {
+      "A": 1
+    },
+    "embeddingCellRadiusMode": {
+      "A": "auto"
+    },
+    "embeddingCellOpacity": {
+      "A": 1
+    },
+    "embeddingCellOpacityMode": {
+      "A": "auto"
+    },
+    "spatialZoom": {
+      "A": -4.756901986186409
+    },
+    "spatialRotation": {
+      "A": 0
+    },
+    "spatialTargetX": {
+      "A": 6332
+    },
+    "spatialTargetY": {
+      "A": 3745.5
+    },
+    "spatialTargetZ": {
+      "A": null
+    },
+    "spatialRotationX": {
+      "A": null
+    },
+    "spatialRotationY": {
+      "A": null
+    },
+    "spatialRotationZ": {
+      "A": null
+    },
+    "spatialRotationOrbit": {
+      "A": 0
+    },
+    "spatialOrbitAxis": {
+      "A": "Y"
+    },
+    "spatialAxisFixed": {
+      "A": false
+    },
+    "heatmapZoomX": {
+      "A": 0
+    },
+    "heatmapZoomY": {
+      "A": 0
+    },
+    "heatmapTargetX": {
+      "A": 0
+    },
+    "heatmapTargetY": {
+      "A": 0
+    },
+    "cellFilter": {
+      "A": null
+    },
+    "cellHighlight": {
+      "A": null
+    },
+    "cellSetSelection": {
+      "A": [
+        [
+          "Cell K-Means [tSNE_All_Features]",
+          "1"
+        ],
+        [
+          "Cell K-Means [tSNE_All_Features]",
+          "2"
+        ],
+        [
+          "Cell K-Means [tSNE_All_Features]",
+          "3"
+        ],
+        [
+          "Cell K-Means [tSNE_All_Features]",
+          "4"
+        ],
+        [
+          "Cell K-Means [tSNE_All_Features]",
+          "5"
+        ],
+        [
+          "Cell K-Means [tSNE_All_Features]",
+          "6"
+        ],
+        [
+          "Cell K-Means [tSNE_All_Features]",
+          "7"
+        ]
+      ]
+    },
+    "cellSetHighlight": {
+      "A": null
+    },
+    "cellSetColor": {
+      "A": [
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]",
+            "1"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]",
+            "2"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]",
+            "3"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]",
+            "4"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]",
+            "5"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]",
+            "6"
+          ],
+          "color": [
+            221,
+            204,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [tSNE_All_Features]",
+            "7"
+          ],
+          "color": [
+            204,
+            102,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean-All-SubRegions] Expression"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean-All-SubRegions] Expression",
+            "1"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean-All-SubRegions] Expression",
+            "2"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean-All-SubRegions] Expression",
+            "3"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean] Expression"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean] Expression",
+            "1"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean] Expression",
+            "2"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Mean] Expression",
+            "3"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Shape-Vectors]"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Shape-Vectors]",
+            "1"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Shape-Vectors]",
+            "2"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Shape-Vectors]",
+            "3"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Texture]"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Texture]",
+            "1"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Total] Expression"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Total] Expression",
+            "1"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Total] Expression",
+            "2"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Total] Expression",
+            "3"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Total] Expression",
+            "4"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Total] Expression",
+            "5"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Covariance] Expression"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Covariance] Expression",
+            "1"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Covariance] Expression",
+            "2"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Cell K-Means [Covariance] Expression",
+            "3"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        }
+      ]
+    },
+    "geneFilter": {
+      "A": null
+    },
+    "geneHighlight": {
+      "A": null
+    },
+    "geneSelection": {
+      "A": null
+    },
+    "geneExpressionColormap": {
+      "A": "plasma"
+    },
+    "geneExpressionColormapRange": {
+      "A": [
+        0,
+        1
+      ]
+    },
+    "cellColorEncoding": {
+      "A": "cellSetSelection"
+    },
+    "spatialRasterLayers": {
+      "A": [
+        {
+          "type": "raster",
+          "index": 0,
+          "visible": true,
+          "colormap": null,
+          "opacity": 1,
+          "domainType": "Min/Max",
+          "transparentColor": null,
+          "renderingMode": "Additive",
+          "use3d": false,
+          "channels": [
+            {
+              "selection": {
+                "c": 0,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                0,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                24,
+                12794
+              ]
+            },
+            {
+              "selection": {
+                "c": 1,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                0,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                19,
+                2624
+              ]
+            },
+            {
+              "selection": {
+                "c": 2,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                255,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                55,
+                59324
+              ]
+            },
+            {
+              "selection": {
+                "c": 3,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                255,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                20,
+                14454
+              ]
+            }
+          ]
+        },
+        {
+          "type": "bitmask",
+          "index": 1,
+          "visible": true,
+          "colormap": null,
+          "opacity": 1,
+          "domainType": "Min/Max",
+          "transparentColor": [
+            0,
+            0,
+            0
+          ],
+          "renderingMode": "Additive",
+          "use3d": false,
+          "channels": [
+            {
+              "selection": {
+                "c": 0,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                0,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                71,
+                92994
+              ]
+            },
+            {
+              "selection": {
+                "c": 1,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                0,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                91,
+                92988
+              ]
+            },
+            {
+              "selection": {
+                "c": 2,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                255,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                10,
+                93010
+              ]
+            },
+            {
+              "selection": {
+                "c": 3,
+                "t": 0,
+                "z": 0
+              },
+              "color": [
+                255,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                100,
+                92986
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spatialCellsLayer": {
+      "A": {
+        "opacity": 1,
+        "radius": 50,
+        "visible": true,
+        "stroked": false
+      }
+    },
+    "spatialMoleculesLayer": {
+      "A": null
+    },
+    "spatialNeighborhoodsLayer": {
+      "A": null
+    },
+    "additionalCellSets": {
+      "A": null
+    },
+    "moleculeHighlight": {
+      "A": null
+    }
+  },
+  "datasets": [
+    {
+      "files": [
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "factors": [
+              "obs/Cell K-Means [tSNE_All_Features]",
+              "obs/Cell K-Means [Mean-All-SubRegions] Expression",
+              "obs/Cell K-Means [Mean] Expression",
+              "obs/Cell K-Means [Shape-Vectors]",
+              "obs/Cell K-Means [Texture]",
+              "obs/Cell K-Means [Total] Expression",
+              "obs/Cell K-Means [Covariance] Expression"
+            ],
+            "mappings": {
+              "t-SNE": {
+                "dims": [
+                  0,
+                  1
+                ],
+                "key": "obsm/tsne"
+              }
+            },
+            "xy": "obsm/xy"
+          },
+          "type": "cells",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+        },
+        {
+          "fileType": "anndata-cell-sets.zarr",
+          "options": [
+            {
+              "groupName": "Cell K-Means [tSNE_All_Features]",
+              "setName": "obs/Cell K-Means [tSNE_All_Features]"
+            },
+            {
+              "groupName": "Cell K-Means [Mean-All-SubRegions] Expression",
+              "setName": "obs/Cell K-Means [Mean-All-SubRegions] Expression"
+            },
+            {
+              "groupName": "Cell K-Means [Mean] Expression",
+              "setName": "obs/Cell K-Means [Mean] Expression"
+            },
+            {
+              "groupName": "Cell K-Means [Shape-Vectors]",
+              "setName": "obs/Cell K-Means [Shape-Vectors]"
+            },
+            {
+              "groupName": "Cell K-Means [Texture]",
+              "setName": "obs/Cell K-Means [Texture]"
+            },
+            {
+              "groupName": "Cell K-Means [Total] Expression",
+              "setName": "obs/Cell K-Means [Total] Expression"
+            },
+            {
+              "groupName": "Cell K-Means [Covariance] Expression",
+              "setName": "obs/Cell K-Means [Covariance] Expression"
+            }
+          ],
+          "type": "cell-sets",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "matrix": "X"
+          },
+          "type": "expression-matrix",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+        },
+        {
+          "fileType": "raster.json",
+          "options": {
+            "images": [
+              {
+                "metadata": {
+                  "isBitmask": false,
+                  "omeTiffOffsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/expressions/reg1_stitched_expressions.offsets.json?token="
+                },
+                "name": "reg1_stitched_expressions",
+                "type": "ome-tiff",
+                "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/expressions/reg1_stitched_expressions.ome.tif?token="
+              },
+              {
+                "metadata": {
+                  "isBitmask": true,
+                  "omeTiffOffsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/mask/reg1_stitched_mask.offsets.json?token="
+                },
+                "name": "reg1_stitched_mask",
+                "type": "ome-tiff",
+                "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/mask/reg1_stitched_mask.ome.tif?token="
+              }
+            ],
+            "renderLayers": [
+              "reg1_stitched_expressions",
+              "reg1_stitched_mask"
+            ],
+            "schemaVersion": "0.0.2",
+            "usePhysicalSizeScaling": false
+          },
+          "type": "raster"
+        }
+      ],
+      "name": "SPRM",
+      "uid": "A"
+    }
+  ],
+  "description": "",
+  "initStrategy": "auto",
+  "layout": [
+    {
+      "component": "spatial",
+      "coordinationScopes": {
+        "dataset": "A",
+        "spatialZoom": "A",
+        "spatialRotation": "A",
+        "spatialTargetX": "A",
+        "spatialTargetY": "A",
+        "spatialTargetZ": "A",
+        "spatialRotationX": "A",
+        "spatialRotationY": "A",
+        "spatialRotationZ": "A",
+        "spatialRotationOrbit": "A",
+        "spatialOrbitAxis": "A",
+        "spatialAxisFixed": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "spatialRasterLayers": "A",
+        "spatialCellsLayer": "A",
+        "spatialMoleculesLayer": "A",
+        "spatialNeighborhoodsLayer": "A",
+        "additionalCellSets": "A",
+        "moleculeHighlight": "A"
+      },
+      "h": 8,
+      "w": 4,
+      "x": 3,
+      "y": 0
+    },
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "dataset": "A",
+        "embeddingType": "A",
+        "embeddingZoom": "A",
+        "embeddingRotation": "A",
+        "embeddingTargetX": "A",
+        "embeddingTargetY": "A",
+        "embeddingTargetZ": "A",
+        "embeddingCellSetPolygonsVisible": "A",
+        "embeddingCellSetLabelsVisible": "A",
+        "embeddingCellSetLabelSize": "A",
+        "embeddingCellRadius": "A",
+        "embeddingCellRadiusMode": "A",
+        "embeddingCellOpacity": "A",
+        "embeddingCellOpacityMode": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "h": 8,
+      "w": 3,
+      "x": 7,
+      "y": 0
+    },
+    {
+      "component": "description",
+      "coordinationScopes": {
+        "dataset": "A",
+        "spatialRasterLayers": "A"
+      },
+      "h": 4,
+      "w": 3,
+      "x": 0,
+      "y": 8
+    },
+    {
+      "component": "layerController",
+      "coordinationScopes": {
+        "dataset": "A",
+        "spatialZoom": "A",
+        "spatialTargetX": "A",
+        "spatialTargetY": "A",
+        "spatialTargetZ": "A",
+        "spatialRotationX": "A",
+        "spatialRotationY": "A",
+        "spatialRotationZ": "A",
+        "spatialRotationOrbit": "A",
+        "spatialOrbitAxis": "A",
+        "spatialRasterLayers": "A",
+        "spatialCellsLayer": "A",
+        "spatialMoleculesLayer": "A",
+        "spatialNeighborhoodsLayer": "A"
+      },
+      "h": 8,
+      "w": 3,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "component": "cellSets",
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneSelection": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "h": 7,
+      "w": 2,
+      "x": 10,
+      "y": 5
+    },
+    {
+      "component": "genes",
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "geneFilter": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "cellColorEncoding": "A"
+      },
+      "h": 5,
+      "props": {
+        "variablesLabelOverride": "antigen"
+      },
+      "w": 2,
+      "x": 10,
+      "y": 0
+    },
+    {
+      "component": "heatmap",
+      "coordinationScopes": {
+        "dataset": "A",
+        "heatmapZoomX": "A",
+        "heatmapZoomY": "A",
+        "heatmapTargetX": "A",
+        "heatmapTargetY": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneFilter": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "h": 4,
+      "props": {
+        "transpose": true,
+        "variablesLabelOverride": "antigen"
+      },
+      "w": 7,
+      "x": 3,
+      "y": 8
+    }
+  ],
+  "name": "reg1_stitched_expressions",
+  "version": "1.0.9"
+}
