@@ -3,6 +3,19 @@
     "dataset": {
       "A": "A"
     },
+    "obsType": {
+      "OT1": "cell"
+    },
+    "featureType": {
+      "FT1": "antigen"
+    },
+    "featureValueType": {
+      "FVT1": "quantification"
+    },
+    "spatialLayerType": {
+      "SLT1": "segmentation",
+      "SLT2": "raster"
+    },
     "embeddingType": {
       "A": "t-SNE"
     },
@@ -21,25 +34,25 @@
     "embeddingTargetZ": {
       "A": 0
     },
-    "embeddingCellSetPolygonsVisible": {
+    "embeddingObsSetPolygonsVisible": {
       "A": false
     },
-    "embeddingCellSetLabelsVisible": {
+    "embeddingObsSetLabelsVisible": {
       "A": false
     },
-    "embeddingCellSetLabelSize": {
+    "embeddingObsSetLabelSize": {
       "A": 14
     },
-    "embeddingCellRadius": {
+    "embeddingObsRadius": {
       "A": 1
     },
-    "embeddingCellRadiusMode": {
+    "embeddingObsRadiusMode": {
       "A": "auto"
     },
-    "embeddingCellOpacity": {
+    "embeddingObsOpacity": {
       "A": 1
     },
-    "embeddingCellOpacityMode": {
+    "embeddingObsOpacityMode": {
       "A": "auto"
     },
     "spatialZoom": {
@@ -87,13 +100,13 @@
     "heatmapTargetY": {
       "A": 0
     },
-    "cellFilter": {
+    "obsFilter": {
       "A": null
     },
-    "cellHighlight": {
+    "obsHighlight": {
       "A": null
     },
-    "cellSetSelection": {
+    "obsSetSelection": {
       "A": [
         [
           "Cell K-Means [tSNE_All_Features]",
@@ -125,10 +138,10 @@
         ]
       ]
     },
-    "cellSetHighlight": {
+    "obsSetHighlight": {
       "A": null
     },
-    "cellSetColor": {
+    "obsSetColor": {
       "A": [
         {
           "path": [
@@ -477,28 +490,28 @@
         }
       ]
     },
-    "geneFilter": {
+    "featureFilter": {
       "A": null
     },
-    "geneHighlight": {
+    "featureHighlight": {
       "A": null
     },
-    "geneSelection": {
+    "featureSelection": {
       "A": null
     },
-    "geneExpressionColormap": {
+    "featureValueColormap": {
       "A": "plasma"
     },
-    "geneExpressionColormapRange": {
+    "featureValueColormapRange": {
       "A": [
         0,
         1
       ]
     },
-    "cellColorEncoding": {
+    "obsColorEncoding": {
       "A": "cellSetSelection"
     },
-    "spatialRasterLayers": {
+    "spatialRasterLayer": {
       "A": [
         {
           "type": "raster",
@@ -668,7 +681,7 @@
         }
       ]
     },
-    "spatialCellsLayer": {
+    "spatialSegmentationLayer": {
       "A": {
         "opacity": 1,
         "radius": 50,
@@ -676,13 +689,13 @@
         "stroked": false
       }
     },
-    "spatialMoleculesLayer": {
+    "spatialPointLayer": {
       "A": null
     },
-    "spatialNeighborhoodsLayer": {
+    "spatialNeighborhoodLayer": {
       "A": null
     },
-    "additionalCellSets": {
+    "additionalObsSets": {
       "A": null
     },
     "moleculeHighlight": {
@@ -695,103 +708,122 @@
         {
           "fileType": "anndata-cells.zarr",
           "options": {
-            "factors": [
-              "obs/Cell K-Means [tSNE_All_Features]",
-              "obs/Cell K-Means [Mean-All-SubRegions] Expression",
-              "obs/Cell K-Means [Mean] Expression",
-              "obs/Cell K-Means [Shape-Vectors]",
-              "obs/Cell K-Means [Texture]",
-              "obs/Cell K-Means [Total] Expression",
-              "obs/Cell K-Means [Covariance] Expression"
-            ],
-            "mappings": {
-              "t-SNE": {
-                "dims": [
-                  0,
-                  1
-                ],
-                "key": "obsm/tsne"
-              }
-            },
-            "xy": "obsm/xy"
+            "path": "obsm/tsne",
+            "dims": [0, 1]
           },
-          "type": "cells",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+          "type": "obsEmbedding",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "t-SNE"
+          }
+        },
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "path": "obsm/xy"
+          },
+          "type": "obsLocations",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "fileType": "anndata-cell-sets.zarr",
           "options": [
             {
-              "groupName": "Cell K-Means [tSNE_All_Features]",
-              "setName": "obs/Cell K-Means [tSNE_All_Features]"
+              "name": "Cell K-Means [tSNE_All_Features]",
+              "path": "obs/Cell K-Means [tSNE_All_Features]"
             },
             {
-              "groupName": "Cell K-Means [Mean-All-SubRegions] Expression",
-              "setName": "obs/Cell K-Means [Mean-All-SubRegions] Expression"
+              "name": "Cell K-Means [Mean-All-SubRegions] Expression",
+              "path": "obs/Cell K-Means [Mean-All-SubRegions] Expression"
             },
             {
-              "groupName": "Cell K-Means [Mean] Expression",
-              "setName": "obs/Cell K-Means [Mean] Expression"
+              "name": "Cell K-Means [Mean] Expression",
+              "path": "obs/Cell K-Means [Mean] Expression"
             },
             {
-              "groupName": "Cell K-Means [Shape-Vectors]",
-              "setName": "obs/Cell K-Means [Shape-Vectors]"
+              "name": "Cell K-Means [Shape-Vectors]",
+              "path": "obs/Cell K-Means [Shape-Vectors]"
             },
             {
-              "groupName": "Cell K-Means [Texture]",
-              "setName": "obs/Cell K-Means [Texture]"
+              "name": "Cell K-Means [Texture]",
+              "path": "obs/Cell K-Means [Texture]"
             },
             {
-              "groupName": "Cell K-Means [Total] Expression",
-              "setName": "obs/Cell K-Means [Total] Expression"
+              "name": "Cell K-Means [Total] Expression",
+              "path": "obs/Cell K-Means [Total] Expression"
             },
             {
-              "groupName": "Cell K-Means [Covariance] Expression",
-              "setName": "obs/Cell K-Means [Covariance] Expression"
+              "name": "Cell K-Means [Covariance] Expression",
+              "path": "obs/Cell K-Means [Covariance] Expression"
             }
           ],
-          "type": "cell-sets",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+          "type": "obsSets",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "fileType": "anndata-expression-matrix.zarr",
           "options": {
-            "matrix": "X"
+            "path": "obs/index"
           },
-          "type": "expression-matrix",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr"
+          "type": "obsIndex",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
-          "fileType": "raster.json",
+          "fileType": "anndata-expression-matrix.zarr",
           "options": {
-            "images": [
-              {
-                "metadata": {
-                  "isBitmask": false,
-                  "omeTiffOffsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/expressions/reg1_stitched_expressions.offsets.json?token="
-                },
-                "name": "reg1_stitched_expressions",
-                "type": "ome-tiff",
-                "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/expressions/reg1_stitched_expressions.ome.tif?token="
-              },
-              {
-                "metadata": {
-                  "isBitmask": true,
-                  "omeTiffOffsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/mask/reg1_stitched_mask.offsets.json?token="
-                },
-                "name": "reg1_stitched_mask",
-                "type": "ome-tiff",
-                "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/mask/reg1_stitched_mask.ome.tif?token="
-              }
-            ],
-            "renderLayers": [
-              "reg1_stitched_expressions",
-              "reg1_stitched_mask"
-            ],
-            "schemaVersion": "0.0.2",
+            "path": "var/index"
+          },
+          "type": "featureIndex",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "featureType": "antigen"
+          }
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "path": "X"
+          },
+          "type": "obsFeatureMatrix",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "antigen",
+            "featureValueType": "expression"
+          }
+        },
+        {
+          "fileType": "raster.ome-tiff",
+          "options": {
+            "offsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/expressions/reg1_stitched_expressions.offsets.json?token=",
+            "name": "reg1_stitched_expressions",
             "usePhysicalSizeScaling": false
           },
-          "type": "raster"
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/expressions/reg1_stitched_expressions.ome.tif?token=",
+          "type": "image"
+        },
+        {
+          "fileType": "raster.ome-tiff",
+          "options": {
+            "offsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/mask/reg1_stitched_mask.offsets.json?token=",
+            "name": "reg1_stitched_mask",
+            "usePhysicalSizeScaling": false
+          },
+          "type": "obsSegmentations",
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/mask/reg1_stitched_mask.ome.tif?token=",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         }
       ],
       "name": "SPRM",
@@ -805,6 +837,10 @@
       "component": "spatial",
       "coordinationScopes": {
         "dataset": "A",
+        "spatialLayerType": ["SLT1", "SLT2"],
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "spatialZoom": "A",
         "spatialRotation": "A",
         "spatialTargetX": "A",
@@ -816,21 +852,21 @@
         "spatialRotationOrbit": "A",
         "spatialOrbitAxis": "A",
         "spatialAxisFixed": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "spatialRasterLayers": "A",
-        "spatialCellsLayer": "A",
-        "spatialMoleculesLayer": "A",
-        "spatialNeighborhoodsLayer": "A",
-        "additionalCellSets": "A",
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "spatialRasterLayer": "A",
+        "spatialSegmentationLayer": "A",
+        "spatialPointLayer": "A",
+        "spatialNeighborhoodLayer": "A",
+        "additionalObsSets": "A",
         "moleculeHighlight": "A"
       },
       "h": 8,
@@ -842,30 +878,33 @@
       "component": "scatterplot",
       "coordinationScopes": {
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingType": "A",
         "embeddingZoom": "A",
         "embeddingRotation": "A",
         "embeddingTargetX": "A",
         "embeddingTargetY": "A",
         "embeddingTargetZ": "A",
-        "embeddingCellSetPolygonsVisible": "A",
-        "embeddingCellSetLabelsVisible": "A",
-        "embeddingCellSetLabelSize": "A",
-        "embeddingCellRadius": "A",
-        "embeddingCellRadiusMode": "A",
-        "embeddingCellOpacity": "A",
-        "embeddingCellOpacityMode": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "embeddingObsSetPolygonsVisible": "A",
+        "embeddingObsSetLabelsVisible": "A",
+        "embeddingObsSetLabelSize": "A",
+        "embeddingObsRadius": "A",
+        "embeddingObsRadiusMode": "A",
+        "embeddingObsOpacity": "A",
+        "embeddingObsOpacityMode": "A",
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "h": 8,
       "w": 3,
@@ -876,7 +915,7 @@
       "component": "description",
       "coordinationScopes": {
         "dataset": "A",
-        "spatialRasterLayers": "A"
+        "spatialRasterLayer": "A"
       },
       "h": 4,
       "w": 3,
@@ -887,6 +926,10 @@
       "component": "layerController",
       "coordinationScopes": {
         "dataset": "A",
+        "spatialLayerType": ["SLT1", "SLT2"],
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "spatialZoom": "A",
         "spatialTargetX": "A",
         "spatialTargetY": "A",
@@ -896,10 +939,10 @@
         "spatialRotationZ": "A",
         "spatialRotationOrbit": "A",
         "spatialOrbitAxis": "A",
-        "spatialRasterLayers": "A",
-        "spatialCellsLayer": "A",
-        "spatialMoleculesLayer": "A",
-        "spatialNeighborhoodsLayer": "A"
+        "spatialRasterLayer": "A",
+        "spatialSegmentationLayer": "A",
+        "spatialPointLayer": "A",
+        "spatialNeighborhoodLayer": "A"
       },
       "h": 8,
       "w": 3,
@@ -910,12 +953,13 @@
       "component": "cellSets",
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneSelection": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "obsType": "OT1",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureSelection": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "h": 7,
       "w": 2,
@@ -926,16 +970,14 @@
       "component": "genes",
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "geneFilter": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "cellColorEncoding": "A"
+        "featureType": "FT1",
+        "obsSetSelection": "A",
+        "featureFilter": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "obsColorEncoding": "A"
       },
       "h": 5,
-      "props": {
-        "variablesLabelOverride": "antigen"
-      },
       "w": 2,
       "x": 10,
       "y": 0
@@ -944,27 +986,29 @@
       "component": "heatmap",
       "coordinationScopes": {
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "heatmapZoomX": "A",
         "heatmapZoomY": "A",
         "heatmapTargetX": "A",
         "heatmapTargetY": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneFilter": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureFilter": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "h": 4,
       "props": {
-        "transpose": true,
-        "variablesLabelOverride": "antigen"
+        "transpose": true
       },
       "w": 7,
       "x": 3,
