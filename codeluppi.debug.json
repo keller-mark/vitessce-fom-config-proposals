@@ -9,14 +9,46 @@
       "name": "Codeluppi",
       "files": [
         {
-          "type": "cells",
+          "type": "obsEmbedding",
           "fileType": "cells.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "t-SNE"
+          }
         },
         {
-          "type": "cell-sets",
+          "type": "obsEmbedding",
+          "fileType": "cells.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "PCA"
+          }
+        },
+        {
+          "type": "obsLocations",
+          "fileType": "cells.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "type": "obsSegmentations",
+          "fileType": "cells.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "type": "obsSets",
           "fileType": "cell-sets.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
         },
         {
           "type": "raster",
@@ -24,9 +56,29 @@
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.raster.json"
         },
         {
-          "type": "molecules",
+          "type": "obsIndex",
           "fileType": "molecules.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
+          "coordinationValues": {
+            "obsType": "molecule"
+          }
+        },
+        {
+          "type": "obsColumn",
+          "fileType": "molecules.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
+          "coordinationValues": {
+            "obsType": "molecule",
+            "featureType": "gene"
+          }
+        },
+        {
+          "type": "obsLocations",
+          "fileType": "molecules.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
+          "coordinationValues": {
+            "obsType": "molecule"
+          }
         },
         {
           "type": "neighborhoods",
@@ -34,14 +86,50 @@
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.neighborhoods.json"
         },
         {
-          "type": "expression-matrix",
+          "type": "obsIndex",
           "fileType": "clusters.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json"
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        },
+        {
+          "type": "featureIndex",
+          "fileType": "clusters.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
+          "coordinationValues": {
+            "featureType": "gene"
+          }
+        },
+        {
+          "type": "obsFeatureMatrix",
+          "fileType": "clusters.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "gene",
+            "featureValueType": "expression"
+          }
         }
       ]
     }
   ],
   "coordinationSpace": {
+    "obsType": {
+      "OT1": "cell",
+      "OT2": "molecule"
+    },
+    "featureType": {
+      "FT1": "gene"
+    },
+    "featureValueType": {
+      "FVT1": "expression"
+    },
+    "spatialLayerType": {
+      "SLT1": "segmentation",
+      "SLT2": "point",
+      "SLT3": "raster"
+    },
     "embeddingZoom": {
       "PCA": 0.2732510229584591,
       "TSNE": 1.4115535636756307
@@ -80,30 +168,30 @@
       "A": 0,
       "B": 0
     },
-    "embeddingCellSetPolygonsVisible": {
+    "embeddingObsSetPolygonsVisible": {
       "A": false,
       "B": false
     },
-    "embeddingCellSetLabelsVisible": {
+    "embeddingObsSetLabelsVisible": {
       "A": false,
       "B": false
     },
-    "embeddingCellSetLabelSize": {
+    "embeddingObsSetLabelSize": {
       "A": 14,
       "B": 14
     },
-    "embeddingCellRadius": {
+    "embeddingObsRadius": {
       "A": 1,
       "B": 1
     },
-    "embeddingCellRadiusMode": {
+    "embeddingObsRadiusMode": {
       "A": "auto"
     },
-    "embeddingCellOpacity": {
+    "embeddingObsOpacity": {
       "A": 1,
       "B": 1
     },
-    "embeddingCellOpacityMode": {
+    "embeddingObsOpacityMode": {
       "A": "auto"
     },
     "spatialRotation": {
@@ -142,13 +230,13 @@
     "heatmapTargetY": {
       "A": 0
     },
-    "cellFilter": {
+    "obsFilter": {
       "A": null
     },
-    "cellHighlight": {
+    "obsHighlight": {
       "A": null
     },
-    "cellSetSelection": {
+    "obsSetSelection": {
       "A": [
         [
           "Cell Type Annotations",
@@ -180,10 +268,10 @@
         ]
       ]
     },
-    "cellSetHighlight": {
+    "obsSetHighlight": {
       "A": null
     },
-    "cellSetColor": {
+    "obsSetColor": {
       "A": [
         {
           "path": [
@@ -646,31 +734,31 @@
         }
       ]
     },
-    "geneFilter": {
+    "featureFilter": {
       "A": null
     },
-    "geneHighlight": {
+    "featureHighlight": {
       "A": null
     },
-    "geneSelection": {
+    "featureSelection": {
       "A": null
     },
-    "geneExpressionColormap": {
+    "featureValueColormap": {
       "A": "plasma"
     },
-    "geneExpressionTransform": {
+    "featureValueTransform": {
       "A": null
     },
-    "geneExpressionColormapRange": {
+    "featureValueColormapRange": {
       "A": [
         0,
         1
       ]
     },
-    "cellColorEncoding": {
+    "obsColorEncoding": {
       "A": "cellSetSelection"
     },
-    "spatialRasterLayers": {
+    "spatialRasterLayer": {
       "A": [
         {
           "type": "raster",
@@ -717,7 +805,7 @@
         }
       ]
     },
-    "spatialCellsLayer": {
+    "spatialSegmentationLayer": {
       "A": {
         "opacity": 1,
         "radius": 50,
@@ -725,19 +813,19 @@
         "stroked": false
       }
     },
-    "spatialMoleculesLayer": {
+    "spatialPointLayer": {
       "A": {
         "opacity": 1,
         "radius": 20,
         "visible": true
       }
     },
-    "spatialNeighborhoodsLayer": {
+    "spatialNeighborhoodLayer": {
       "A": {
         "visible": false
       }
     },
-    "additionalCellSets": {
+    "additionalObsSets": {
       "A": null
     },
     "moleculeHighlight": {
@@ -756,7 +844,7 @@
       "h": 1,
       "coordinationScopes": {
         "dataset": "A",
-        "spatialRasterLayers": "A"
+        "spatialRasterLayer": "A"
       }
     },
     {
@@ -780,10 +868,18 @@
         "spatialRotationZ": "A",
         "spatialRotationOrbit": "A",
         "spatialOrbitAxis": "A",
-        "spatialRasterLayers": "A",
-        "spatialCellsLayer": "A",
-        "spatialMoleculesLayer": "A",
-        "spatialNeighborhoodsLayer": "A"
+        "spatialRasterLayer": "A",
+        "spatialSegmentationLayer": "A",
+        "spatialPointLayer": "A",
+        "spatialNeighborhoodLayer": "A",
+        "spatialLayerType": ["SLT1", "SLT2", "SLT3"]
+      },
+      "coordinationScopesBy": {
+        "spatialLayerType": {
+          "obsType": { "SLT1": "OT1", "SLT2": "OT2" },
+          "featureType": { "SLT1": "FT1", "SLT2": "FT1" },
+          "featureValueType": { "SLT1": "FVT1" }
+        }
       }
     },
     {
@@ -794,9 +890,9 @@
       "h": 1,
       "coordinationScopes": {
         "dataset": "A",
-        "cellHighlight": "A",
-        "cellSetHighlight": "A",
-        "geneHighlight": "A",
+        "obsHighlight": "A",
+        "obsSetHighlight": "A",
+        "featureHighlight": "A",
         "moleculeHighlight": "A"
       }
     },
@@ -815,22 +911,30 @@
         "spatialRotationOrbit": "A",
         "spatialOrbitAxis": "A",
         "spatialAxisFixed": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "spatialRasterLayers": "A",
-        "spatialCellsLayer": "A",
-        "spatialMoleculesLayer": "A",
-        "spatialNeighborhoodsLayer": "A",
-        "additionalCellSets": "A",
-        "moleculeHighlight": "A"
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "spatialRasterLayer": "A",
+        "spatialSegmentationLayer": "A",
+        "spatialPointLayer": "A",
+        "spatialNeighborhoodLayer": "A",
+        "additionalObsSets": "A",
+        "moleculeHighlight": "A",
+        "spatialLayerType": ["SLT1", "SLT2", "SLT3"]
+      },
+      "coordinationScopesBy": {
+        "spatialLayerType": {
+          "obsType": { "SLT1": "OT1", "SLT2": "OT2" },
+          "featureType": { "SLT1": "FT1", "SLT2": "FT1" },
+          "featureValueType": { "SLT1": "FVT1" }
+        }
       },
       "x": 2,
       "y": 0,
@@ -845,11 +949,12 @@
       "h": 2,
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "geneFilter": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "cellColorEncoding": "A"
+        "featureType": "FT1",
+        "obsSetSelection": "A",
+        "featureFilter": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "obsColorEncoding": "A"
       }
     },
     {
@@ -860,12 +965,13 @@
       "h": 2,
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneSelection": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "obsType": "OT1",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureSelection": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       }
     },
     {
@@ -879,22 +985,25 @@
       "h": 2,
       "coordinationScopes": {
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "heatmapZoomX": "A",
         "heatmapZoomY": "A",
         "heatmapTargetX": "A",
         "heatmapTargetY": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneFilter": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureFilter": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       }
     },
     {
@@ -905,12 +1014,15 @@
       "h": 2,
       "coordinationScopes": {
         "dataset": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneSelection": "A",
-        "geneExpressionTransform": "A",
-        "additionalCellSets": "A"
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureSelection": "A",
+        "featureValueTransform": "A",
+        "additionalObsSets": "A"
       }
     },
     {
@@ -919,28 +1031,31 @@
         "embeddingType": "PCA",
         "embeddingZoom": "PCA",
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingRotation": "A",
         "embeddingTargetX": "A",
         "embeddingTargetY": "A",
         "embeddingTargetZ": "A",
-        "embeddingCellSetPolygonsVisible": "A",
-        "embeddingCellSetLabelsVisible": "A",
-        "embeddingCellSetLabelSize": "A",
-        "embeddingCellRadius": "A",
-        "embeddingCellRadiusMode": "A",
-        "embeddingCellOpacity": "A",
-        "embeddingCellOpacityMode": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "embeddingObsSetPolygonsVisible": "A",
+        "embeddingObsSetLabelsVisible": "A",
+        "embeddingObsSetLabelSize": "A",
+        "embeddingObsRadius": "A",
+        "embeddingObsRadiusMode": "A",
+        "embeddingObsOpacity": "A",
+        "embeddingObsOpacityMode": "A",
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "x": 6,
       "y": 0,
@@ -953,28 +1068,31 @@
         "embeddingType": "TSNE",
         "embeddingZoom": "TSNE",
         "dataset": "A",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingRotation": "A",
         "embeddingTargetX": "B",
         "embeddingTargetY": "B",
         "embeddingTargetZ": "B",
-        "embeddingCellSetPolygonsVisible": "B",
-        "embeddingCellSetLabelsVisible": "B",
-        "embeddingCellSetLabelSize": "B",
-        "embeddingCellRadius": "B",
-        "embeddingCellRadiusMode": "A",
-        "embeddingCellOpacity": "B",
-        "embeddingCellOpacityMode": "A",
-        "cellFilter": "A",
-        "cellHighlight": "A",
-        "cellSetSelection": "A",
-        "cellSetHighlight": "A",
-        "cellSetColor": "A",
-        "geneHighlight": "A",
-        "geneSelection": "A",
-        "geneExpressionColormap": "A",
-        "geneExpressionColormapRange": "A",
-        "cellColorEncoding": "A",
-        "additionalCellSets": "A"
+        "embeddingObsSetPolygonsVisible": "B",
+        "embeddingObsSetLabelsVisible": "B",
+        "embeddingObsSetLabelSize": "B",
+        "embeddingObsRadius": "B",
+        "embeddingObsRadiusMode": "A",
+        "embeddingObsOpacity": "B",
+        "embeddingObsOpacityMode": "A",
+        "obsFilter": "A",
+        "obsHighlight": "A",
+        "obsSetSelection": "A",
+        "obsSetHighlight": "A",
+        "obsSetColor": "A",
+        "featureHighlight": "A",
+        "featureSelection": "A",
+        "featureValueColormap": "A",
+        "featureValueColormapRange": "A",
+        "obsColorEncoding": "A",
+        "additionalObsSets": "A"
       },
       "x": 6,
       "y": 2,

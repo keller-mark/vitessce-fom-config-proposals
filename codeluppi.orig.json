@@ -116,14 +116,19 @@
   ],
   "coordinationSpace": {
     "obsType": {
-      "A": "cell",
-      "B": "molecule"
+      "OT1": "cell",
+      "OT2": "molecule"
     },
     "featureType": {
-      "A": "gene"
+      "FT1": "gene"
     },
     "featureValueType": {
-      "A": "expression"
+      "FVT1": "expression"
+    },
+    "spatialLayerType": {
+      "SLT1": "segmentation",
+      "SLT2": "point",
+      "SLT3": "raster"
     },
     "embeddingZoom": {
       "PCA": 0,
@@ -161,13 +166,13 @@
       "w": 2,
       "h": 4,
       "coordinationScopes": {
-        "spatialLayerType": ["segmentation", "point", "raster"]
+        "spatialLayerType": ["SLT1", "SLT2", "SLT3"]
       },
       "coordinationScopesBy": {
         "spatialLayerType": {
-          "obsType": { "segmentation": "cell", "point": "molecule" },
-          "featureType": { "segmentation": "gene", "point": "gene" },
-          "featureValueType": { "segmentation": "expression" }
+          "obsType": { "SLT1": "OT1", "SLT2": "OT2" },
+          "featureType": { "SLT1": "FT1", "SLT2": "FT1" },
+          "featureValueType": { "SLT1": "FVT1" }
         }
       },
       "props": {
@@ -188,13 +193,13 @@
         "spatialZoom": "A",
         "spatialTargetX": "A",
         "spatialTargetY": "A",
-        "spatialLayerType": ["segmentation", "point", "raster"]
+        "spatialLayerType": ["SLT1", "SLT2", "SLT3"]
       },
       "coordinationScopesBy": {
         "spatialLayerType": {
-          "obsType": { "segmentation": "cell", "point": "molecule" },
-          "featureType": { "segmentation": "gene", "point": "gene" },
-          "featureValueType": { "segmentation": "expression" }
+          "obsType": { "SLT1": "OT1", "SLT2": "OT2" },
+          "featureType": { "SLT1": "FT1", "SLT2": "FT1" },
+          "featureValueType": { "SLT1": "FVT1" }
         }
       },
       "x": 2,
@@ -205,7 +210,7 @@
     {
       "component": "genes",
       "coordinationScopes": {
-        "featureType": "gene"
+        "featureType": "FT1"
       },
       "x": 9,
       "y": 0,
@@ -215,7 +220,7 @@
     {
       "component": "cellSets",
       "coordinationScopes": {
-        "obsType": "cell"
+        "obsType": "OT1"
       },
       "x": 9,
       "y": 3,
@@ -225,9 +230,9 @@
     {
       "component": "heatmap",
       "coordinationScopes": {
-        "obsType": "cell",
-        "featureType": "gene",
-        "featureValueType": "expression"
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1"
       },
       "props": {
         "transpose": true
@@ -240,9 +245,9 @@
     {
       "component": "cellSetExpression",
       "coordinationScopes": {
-        "obsType": "cell",
-        "featureType": "gene",
-        "featureValueType": "expression"
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1"
       },
       "x": 7,
       "y": 4,
@@ -252,9 +257,9 @@
     {
       "component": "scatterplot",
       "coordinationScopes": {
-        "obsType": "cell",
-        "featureType": "gene",
-        "featureValueType": "expression",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingType": "PCA",
         "embeddingZoom": "PCA"
       },
@@ -266,9 +271,9 @@
     {
       "component": "scatterplot",
       "coordinationScopes": {
-        "obsType": "cell",
-        "featureType": "gene",
-        "featureValueType": "expression",
+        "obsType": "OT1",
+        "featureType": "FT1",
+        "featureValueType": "FVT1",
         "embeddingType": "TSNE",
         "embeddingZoom": "TSNE"
       },
