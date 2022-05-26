@@ -1,0 +1,501 @@
+{
+  "coordinationSpace": {
+    "dataset": {
+      "A": "A"
+    },
+    "embeddingType": {
+      "A": "UMAP"
+    },
+    "embeddingZoom": {
+      "A": 5.0596391909512475
+    },
+    "embeddingRotation": {
+      "A": 0
+    },
+    "embeddingTargetX": {
+      "A": 1.7319114208221436
+    },
+    "embeddingTargetY": {
+      "A": -0.040946245193481445
+    },
+    "embeddingTargetZ": {
+      "A": 0
+    },
+    "embeddingCellSetPolygonsVisible": {
+      "A": false
+    },
+    "embeddingCellSetLabelsVisible": {
+      "A": false
+    },
+    "embeddingCellSetLabelSize": {
+      "A": 14
+    },
+    "embeddingCellRadius": {
+      "A": 1
+    },
+    "embeddingCellRadiusMode": {
+      "A": "auto"
+    },
+    "embeddingCellOpacity": {
+      "A": 1
+    },
+    "embeddingCellOpacityMode": {
+      "A": "auto"
+    },
+    "heatmapZoomX": {
+      "A": 0
+    },
+    "heatmapZoomY": {
+      "A": 0
+    },
+    "heatmapTargetX": {
+      "A": 0
+    },
+    "heatmapTargetY": {
+      "A": 0
+    },
+    "cellFilter": {
+      "A": null
+    },
+    "cellHighlight": {
+      "A": null
+    },
+    "cellSetSelection": {
+      "A": [
+        [
+          "Leiden",
+          "0"
+        ],
+        [
+          "Leiden",
+          "1"
+        ],
+        [
+          "Leiden",
+          "2"
+        ],
+        [
+          "Leiden",
+          "3"
+        ],
+        [
+          "Leiden",
+          "4"
+        ],
+        [
+          "Leiden",
+          "5"
+        ],
+        [
+          "Leiden",
+          "6"
+        ],
+        [
+          "Leiden",
+          "7"
+        ],
+        [
+          "Leiden",
+          "8"
+        ],
+        [
+          "Leiden",
+          "9"
+        ],
+        [
+          "Leiden",
+          "10"
+        ],
+        [
+          "Leiden",
+          "11"
+        ],
+        [
+          "Leiden",
+          "12"
+        ],
+        [
+          "Leiden",
+          "13"
+        ],
+        [
+          "Leiden",
+          "14"
+        ]
+      ]
+    },
+    "cellSetHighlight": {
+      "A": null
+    },
+    "cellSetColor": {
+      "A": [
+        {
+          "path": [
+            "Leiden"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "0"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "1"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "2"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "3"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "4"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "5"
+          ],
+          "color": [
+            221,
+            204,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "6"
+          ],
+          "color": [
+            204,
+            102,
+            119
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "7"
+          ],
+          "color": [
+            136,
+            34,
+            85
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "8"
+          ],
+          "color": [
+            170,
+            68,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "9"
+          ],
+          "color": [
+            68,
+            119,
+            170
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "10"
+          ],
+          "color": [
+            136,
+            204,
+            238
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "11"
+          ],
+          "color": [
+            68,
+            170,
+            153
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "12"
+          ],
+          "color": [
+            17,
+            119,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "13"
+          ],
+          "color": [
+            153,
+            153,
+            51
+          ]
+        },
+        {
+          "path": [
+            "Leiden",
+            "14"
+          ],
+          "color": [
+            221,
+            204,
+            119
+          ]
+        }
+      ]
+    },
+    "geneFilter": {
+      "A": null
+    },
+    "geneHighlight": {
+      "A": null
+    },
+    "geneSelection": {
+      "A": null
+    },
+    "geneExpressionColormap": {
+      "A": "plasma"
+    },
+    "geneExpressionTransform": {
+      "A": null
+    },
+    "geneExpressionColormapRange": {
+      "A": [
+        0,
+        1
+      ]
+    },
+    "cellColorEncoding": {
+      "A": "cellSetSelection"
+    },
+    "additionalCellSets": {
+      "A": null
+    }
+  },
+  "datasets": [
+    {
+      "files": [
+        {
+          "fileType": "anndata-cells.zarr",
+          "options": {
+            "factors": [
+              "obs/marker_gene_0",
+              "obs/marker_gene_1",
+              "obs/marker_gene_2",
+              "obs/marker_gene_3",
+              "obs/marker_gene_4"
+            ],
+            "mappings": {
+              "UMAP": {
+                "dims": [
+                  0,
+                  1
+                ],
+                "key": "obsm/X_umap"
+              }
+            }
+          },
+          "type": "cells",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+        },
+        {
+          "fileType": "anndata-cell-sets.zarr",
+          "options": [
+            {
+              "groupName": "Leiden",
+              "setName": "obs/leiden"
+            }
+          ],
+          "type": "cell-sets",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+        },
+        {
+          "fileType": "anndata-expression-matrix.zarr",
+          "options": {
+            "matrix": "X",
+            "matrixGeneFilter": "var/marker_genes_for_heatmap"
+          },
+          "type": "expression-matrix",
+          "url": "https://assets.hubmapconsortium.org/c05a38c5210b870281b5aea01e290339/hubmap_ui/anndata-zarr/secondary_analysis.zarr"
+        }
+      ],
+      "name": "c05a38c5210b870281b5aea01e290339",
+      "uid": "A"
+    }
+  ],
+  "description": "",
+  "initStrategy": "auto",
+  "layout": [
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "dataset": "A",
+        "embeddingType": "A",
+        "embeddingZoom": "A",
+        "embeddingRotation": "A",
+        "embeddingTargetX": "A",
+        "embeddingTargetY": "A",
+        "embeddingTargetZ": "A",
+        "embeddingCellSetPolygonsVisible": "A",
+        "embeddingCellSetLabelsVisible": "A",
+        "embeddingCellSetLabelSize": "A",
+        "embeddingCellRadius": "A",
+        "embeddingCellRadiusMode": "A",
+        "embeddingCellOpacity": "A",
+        "embeddingCellOpacityMode": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "h": 6,
+      "w": 4,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "component": "cellSetExpression",
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneSelection": "A",
+        "geneExpressionTransform": "A",
+        "additionalCellSets": "A"
+      },
+      "h": 6,
+      "w": 5,
+      "x": 4,
+      "y": 0
+    },
+    {
+      "component": "cellSets",
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneSelection": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "h": 3,
+      "w": 3,
+      "x": 9,
+      "y": 0
+    },
+    {
+      "component": "genes",
+      "coordinationScopes": {
+        "dataset": "A",
+        "cellSetSelection": "A",
+        "geneFilter": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "cellColorEncoding": "A"
+      },
+      "h": 3,
+      "w": 3,
+      "x": 9,
+      "y": 4
+    },
+    {
+      "component": "heatmap",
+      "coordinationScopes": {
+        "dataset": "A",
+        "heatmapZoomX": "A",
+        "heatmapZoomY": "A",
+        "heatmapTargetX": "A",
+        "heatmapTargetY": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneFilter": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "additionalCellSets": "A"
+      },
+      "h": 4,
+      "w": 12,
+      "x": 0,
+      "y": 6
+    }
+  ],
+  "name": "c05a38c5210b870281b5aea01e290339",
+  "version": "1.0.9"
+}

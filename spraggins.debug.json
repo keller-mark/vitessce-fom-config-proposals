@@ -1,0 +1,343 @@
+{
+  "version": "1.0.9",
+  "name": "Spraggins",
+  "description": "High bit depth (uint16) multiplex immunofluorescence images of the kidney by the BIOmolecular Multimodal Imaging Center (BIOMIC) at Vanderbilt University",
+  "public": true,
+  "datasets": [
+    {
+      "uid": "6840b32f-7528-4f6d-91be-92c9b0f96a1c",
+      "name": "6840b32f-7528-4f6d-91be-92c9b0f96a1c",
+      "files": [
+        {
+          "type": "raster",
+          "fileType": "raster.json",
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/spraggins/spraggins.raster.json"
+        }
+      ]
+    }
+  ],
+  "initStrategy": "auto",
+  "coordinationSpace": {
+    "embeddingType": {},
+    "embeddingZoom": {},
+    "embeddingTargetX": {},
+    "embeddingTargetY": {},
+    "spatialZoom": {
+      "A": -6.5,
+      "B": null
+    },
+    "spatialTargetX": {
+      "A": 20000,
+      "B": null
+    },
+    "spatialTargetY": {
+      "A": 20000,
+      "B": null
+    },
+    "dataset": {
+      "A": "6840b32f-7528-4f6d-91be-92c9b0f96a1c"
+    },
+    "spatialRotation": {
+      "A": 0
+    },
+    "spatialTargetZ": {
+      "A": null
+    },
+    "spatialRotationX": {
+      "A": null
+    },
+    "spatialRotationY": {
+      "A": null
+    },
+    "spatialRotationZ": {
+      "A": null
+    },
+    "spatialRotationOrbit": {
+      "A": 0
+    },
+    "spatialOrbitAxis": {
+      "A": "Y"
+    },
+    "spatialAxisFixed": {
+      "A": false
+    },
+    "cellFilter": {
+      "A": null
+    },
+    "cellHighlight": {
+      "A": null
+    },
+    "cellSetSelection": {
+      "A": null
+    },
+    "cellSetHighlight": {
+      "A": null
+    },
+    "cellSetColor": {
+      "A": null
+    },
+    "geneHighlight": {
+      "A": null
+    },
+    "geneSelection": {
+      "A": null
+    },
+    "geneExpressionColormap": {
+      "A": "plasma"
+    },
+    "geneExpressionColormapRange": {
+      "A": [
+        0,
+        1
+      ]
+    },
+    "cellColorEncoding": {
+      "A": "cellSetSelection"
+    },
+    "spatialRasterLayers": {
+      "A": [
+        {
+          "type": "raster",
+          "index": 1,
+          "visible": true,
+          "colormap": null,
+          "opacity": 1,
+          "domainType": "Min/Max",
+          "transparentColor": null,
+          "renderingMode": "Additive",
+          "use3d": false,
+          "channels": [
+            {
+              "selection": {
+                "channel": 0
+              },
+              "color": [
+                0,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                20,
+                24553
+              ]
+            },
+            {
+              "selection": {
+                "channel": 1
+              },
+              "color": [
+                0,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                75,
+                15541
+              ]
+            },
+            {
+              "selection": {
+                "channel": 2
+              },
+              "color": [
+                255,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                17,
+                8705
+              ]
+            },
+            {
+              "selection": {
+                "channel": 3
+              },
+              "color": [
+                255,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                21,
+                7440
+              ]
+            }
+          ]
+        },
+        {
+          "type": "raster",
+          "index": 0,
+          "visible": true,
+          "colormap": null,
+          "opacity": 1,
+          "domainType": "Min/Max",
+          "transparentColor": [
+            0,
+            0,
+            0
+          ],
+          "renderingMode": "Additive",
+          "use3d": false,
+          "channels": [
+            {
+              "selection": {
+                "mz": 0
+              },
+              "color": [
+                0,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                85,
+                657
+              ]
+            },
+            {
+              "selection": {
+                "mz": 1
+              },
+              "color": [
+                0,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                320,
+                18875
+              ]
+            },
+            {
+              "selection": {
+                "mz": 2
+              },
+              "color": [
+                255,
+                0,
+                255
+              ],
+              "visible": true,
+              "slider": [
+                99,
+                4120
+              ]
+            },
+            {
+              "selection": {
+                "mz": 3
+              },
+              "color": [
+                255,
+                255,
+                0
+              ],
+              "visible": true,
+              "slider": [
+                133,
+                9265
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "spatialCellsLayer": {
+      "A": null
+    },
+    "spatialMoleculesLayer": {
+      "A": null
+    },
+    "spatialNeighborhoodsLayer": {
+      "A": null
+    },
+    "additionalCellSets": {
+      "A": null
+    },
+    "moleculeHighlight": {
+      "A": null
+    }
+  },
+  "layout": [
+    {
+      "component": "spatial",
+      "props": {
+        "view": {
+          "zoom": -6.5,
+          "target": [
+            20000,
+            20000,
+            0
+          ]
+        }
+      },
+      "x": 0,
+      "y": 0,
+      "w": 9,
+      "h": 2,
+      "coordinationScopes": {
+        "spatialZoom": "A",
+        "spatialTargetX": "A",
+        "spatialTargetY": "A",
+        "dataset": "A",
+        "spatialRotation": "A",
+        "spatialTargetZ": "A",
+        "spatialRotationX": "A",
+        "spatialRotationY": "A",
+        "spatialRotationZ": "A",
+        "spatialRotationOrbit": "A",
+        "spatialOrbitAxis": "A",
+        "spatialAxisFixed": "A",
+        "cellFilter": "A",
+        "cellHighlight": "A",
+        "cellSetSelection": "A",
+        "cellSetHighlight": "A",
+        "cellSetColor": "A",
+        "geneHighlight": "A",
+        "geneSelection": "A",
+        "geneExpressionColormap": "A",
+        "geneExpressionColormapRange": "A",
+        "cellColorEncoding": "A",
+        "spatialRasterLayers": "A",
+        "spatialCellsLayer": "A",
+        "spatialMoleculesLayer": "A",
+        "spatialNeighborhoodsLayer": "A",
+        "additionalCellSets": "A",
+        "moleculeHighlight": "A"
+      }
+    },
+    {
+      "component": "layerController",
+      "x": 9,
+      "y": 0,
+      "w": 3,
+      "h": 2,
+      "coordinationScopes": {
+        "dataset": "A",
+        "spatialZoom": "B",
+        "spatialTargetX": "B",
+        "spatialTargetY": "B",
+        "spatialTargetZ": "A",
+        "spatialRotationX": "A",
+        "spatialRotationY": "A",
+        "spatialRotationZ": "A",
+        "spatialRotationOrbit": "A",
+        "spatialOrbitAxis": "A",
+        "spatialRasterLayers": "A",
+        "spatialCellsLayer": "A",
+        "spatialMoleculesLayer": "A",
+        "spatialNeighborhoodsLayer": "A"
+      },
+      "props": {
+        "globalDisable3d": true,
+        "disableChannelsIfRgbDetected": true
+      }
+    }
+  ]
+}
