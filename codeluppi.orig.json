@@ -128,7 +128,7 @@
     "spatialLayerType": {
       "SLT1": "segmentation",
       "SLT2": "point",
-      "SLT3": "raster"
+      "SLT3": "image"
     },
     "embeddingZoom": {
       "PCA": 0,

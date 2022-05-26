@@ -14,7 +14,7 @@
     },
     "spatialLayerType": {
       "SLT1": "segmentation",
-      "SLT2": "raster"
+      "SLT2": "image"
     },
     "embeddingType": {
       "A": "t-SNE"

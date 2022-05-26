@@ -14,7 +14,7 @@
     },
     "spatialLayerType": {
       "SLT1": "segmentation",
-      "SLT2": "raster"
+      "SLT2": "image"
     },
     "embeddingType": {
       "A": "t-SNE"
@@ -511,10 +511,10 @@
     "obsColorEncoding": {
       "A": "cellSetSelection"
     },
-    "spatialRasterLayer": {
+    "spatialImageLayer": {
       "A": [
         {
-          "type": "raster",
+          "type": "image",
           "index": 0,
           "visible": true,
           "colormap": null,
@@ -862,7 +862,7 @@
         "featureValueColormap": "A",
         "featureValueColormapRange": "A",
         "obsColorEncoding": "A",
-        "spatialRasterLayer": "A",
+        "spatialImageLayer": "A",
         "spatialSegmentationLayer": "A",
         "spatialPointLayer": "A",
         "spatialNeighborhoodLayer": "A",
@@ -915,7 +915,7 @@
       "component": "description",
       "coordinationScopes": {
         "dataset": "A",
-        "spatialRasterLayer": "A"
+        "spatialImageLayer": "A"
       },
       "h": 4,
       "w": 3,
@@ -939,7 +939,7 @@
         "spatialRotationZ": "A",
         "spatialRotationOrbit": "A",
         "spatialOrbitAxis": "A",
-        "spatialRasterLayer": "A",
+        "spatialImageLayer": "A",
         "spatialSegmentationLayer": "A",
         "spatialPointLayer": "A",
         "spatialNeighborhoodLayer": "A"
