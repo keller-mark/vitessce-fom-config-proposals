@@ -9,107 +9,33 @@
       "name": "Codeluppi",
       "files": [
         {
-          "type": "obsEmbedding",
           "fileType": "cells.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
           "coordinationValues": {
-            "obsType": "cell",
-            "embeddingType": "t-SNE"
+            "embeddingType": ["PCA", "t-SNE"],
+            "hasXY": true,
+            "hasSegmentations": true
           }
         },
         {
-          "type": "obsEmbedding",
-          "fileType": "cells.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
-          "coordinationValues": {
-            "obsType": "cell",
-            "embeddingType": "PCA"
-          }
-        },
-        {
-          "type": "obsLocations",
-          "fileType": "cells.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
-          "coordinationValues": {
-            "obsType": "cell"
-          }
-        },
-        {
-          "type": "obsSegmentations",
-          "fileType": "cells.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
-          "coordinationValues": {
-            "obsType": "cell"
-          }
-        },
-        {
-          "type": "obsSets",
           "fileType": "cell-sets.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json",
-          "coordinationValues": {
-            "obsType": "cell"
-          }
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json"
         },
         {
-          "type": "image",
           "fileType": "raster.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.raster.json"
         },
         {
-          "type": "obsIndex",
           "fileType": "molecules.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
-          "coordinationValues": {
-            "obsType": "molecule"
-          }
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json"
         },
         {
-          "type": "obsColumn",
-          "fileType": "molecules.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
-          "coordinationValues": {
-            "obsType": "molecule",
-            "featureType": "gene"
-          }
-        },
-        {
-          "type": "obsLocations",
-          "fileType": "molecules.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
-          "coordinationValues": {
-            "obsType": "molecule"
-          }
-        },
-        {
-          "type": "neighborhoods",
           "fileType": "neighborhoods.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.neighborhoods.json"
         },
         {
-          "type": "obsIndex",
           "fileType": "clusters.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
-          "coordinationValues": {
-            "obsType": "cell"
-          }
-        },
-        {
-          "type": "featureIndex",
-          "fileType": "clusters.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
-          "coordinationValues": {
-            "featureType": "gene"
-          }
-        },
-        {
-          "type": "obsFeatureMatrix",
-          "fileType": "clusters.json",
-          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
-          "coordinationValues": {
-            "obsType": "cell",
-            "featureType": "gene",
-            "featureValueType": "expression"
-          }
+          "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json"
         }
       ]
     }

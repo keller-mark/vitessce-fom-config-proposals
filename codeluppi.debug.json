@@ -10,7 +10,7 @@
       "files": [
         {
           "type": "obsEmbedding",
-          "fileType": "cells.json",
+          "fileType": "obsEmbedding.cells.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
           "coordinationValues": {
             "obsType": "cell",
@@ -19,7 +19,7 @@
         },
         {
           "type": "obsEmbedding",
-          "fileType": "cells.json",
+          "fileType": "obsEmbedding.cells.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
           "coordinationValues": {
             "obsType": "cell",
@@ -28,7 +28,7 @@
         },
         {
           "type": "obsLocations",
-          "fileType": "cells.json",
+          "fileType": "obsLocations.cells.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
           "coordinationValues": {
             "obsType": "cell"
@@ -36,7 +36,7 @@
         },
         {
           "type": "obsSegmentations",
-          "fileType": "cells.json",
+          "fileType": "obsSegmentations.cells.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
           "coordinationValues": {
             "obsType": "cell"
@@ -44,7 +44,7 @@
         },
         {
           "type": "obsSets",
-          "fileType": "cell-sets.json",
+          "fileType": "obsSets.cell-sets.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cell-sets.json",
           "coordinationValues": {
             "obsType": "cell"
@@ -57,7 +57,7 @@
         },
         {
           "type": "obsIndex",
-          "fileType": "molecules.json",
+          "fileType": "obsIndex.molecules.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
           "coordinationValues": {
             "obsType": "molecule"
@@ -65,7 +65,7 @@
         },
         {
           "type": "obsColumn",
-          "fileType": "molecules.json",
+          "fileType": "obsColumn.molecules.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
           "coordinationValues": {
             "obsType": "molecule",
@@ -74,7 +74,7 @@
         },
         {
           "type": "obsLocations",
-          "fileType": "molecules.json",
+          "fileType": "obsLocations.molecules.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.molecules.json",
           "coordinationValues": {
             "obsType": "molecule"
@@ -87,7 +87,7 @@
         },
         {
           "type": "obsIndex",
-          "fileType": "clusters.json",
+          "fileType": "obsIndex.clusters.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
           "coordinationValues": {
             "obsType": "cell"
@@ -95,7 +95,7 @@
         },
         {
           "type": "featureIndex",
-          "fileType": "clusters.json",
+          "fileType": "featureIndex.clusters.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
           "coordinationValues": {
             "featureType": "gene"
@@ -103,7 +103,7 @@
         },
         {
           "type": "obsFeatureMatrix",
-          "fileType": "clusters.json",
+          "fileType": "obsFeatureMatrix.clusters.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.clusters.json",
           "coordinationValues": {
             "obsType": "cell",
