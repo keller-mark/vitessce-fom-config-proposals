@@ -24,95 +24,57 @@
     {
       "files": [
         {
-          "fileType": "anndata-cells.zarr",
+          "fileType": "anndata.zarr",
           "options": {
-            "path": "obsm/tsne",
-            "dims": [0, 1]
+            "obsFeatureMatrix": {
+              "path": "X"
+            },
+            "obsIndex": {
+              "path": "obs/index"
+            },
+            "featureIndex": {
+              "path": "var/index"
+            },
+            "obsSets": [
+              {
+                "name": "Cell K-Means [tSNE_All_Features]",
+                "path": "obs/Cell K-Means [tSNE_All_Features]"
+              },
+              {
+                "name": "Cell K-Means [Mean-All-SubRegions] Expression",
+                "path": "obs/Cell K-Means [Mean-All-SubRegions] Expression"
+              },
+              {
+                "name": "Cell K-Means [Mean] Expression",
+                "path": "obs/Cell K-Means [Mean] Expression"
+              },
+              {
+                "name": "Cell K-Means [Shape-Vectors]",
+                "path": "obs/Cell K-Means [Shape-Vectors]"
+              },
+              {
+                "name": "Cell K-Means [Texture]",
+                "path": "obs/Cell K-Means [Texture]"
+              },
+              {
+                "name": "Cell K-Means [Total] Expression",
+                "path": "obs/Cell K-Means [Total] Expression"
+              },
+              {
+                "name": "Cell K-Means [Covariance] Expression",
+                "path": "obs/Cell K-Means [Covariance] Expression"
+              }
+            ],
+            "obsLocations": {
+              "path": "obsm/xy"
+            },
+            "obsEmbedding": {
+              "embeddingType": "t-SNE",
+              "path": "obsm/tsne",
+              "dims": [0, 1]
+            }
           },
           "type": "obsEmbedding",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
-          "coordinationValues": {
-            "obsType": "cell",
-            "embeddingType": "t-SNE"
-          }
-        },
-        {
-          "fileType": "anndata-cells.zarr",
-          "options": {
-            "path": "obsm/xy"
-          },
-          "type": "obsLocations",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
-          "coordinationValues": {
-            "obsType": "cell"
-          }
-        },
-        {
-          "fileType": "anndata-cell-sets.zarr",
-          "options": [
-            {
-              "name": "Cell K-Means [tSNE_All_Features]",
-              "path": "obs/Cell K-Means [tSNE_All_Features]"
-            },
-            {
-              "name": "Cell K-Means [Mean-All-SubRegions] Expression",
-              "path": "obs/Cell K-Means [Mean-All-SubRegions] Expression"
-            },
-            {
-              "name": "Cell K-Means [Mean] Expression",
-              "path": "obs/Cell K-Means [Mean] Expression"
-            },
-            {
-              "name": "Cell K-Means [Shape-Vectors]",
-              "path": "obs/Cell K-Means [Shape-Vectors]"
-            },
-            {
-              "name": "Cell K-Means [Texture]",
-              "path": "obs/Cell K-Means [Texture]"
-            },
-            {
-              "name": "Cell K-Means [Total] Expression",
-              "path": "obs/Cell K-Means [Total] Expression"
-            },
-            {
-              "name": "Cell K-Means [Covariance] Expression",
-              "path": "obs/Cell K-Means [Covariance] Expression"
-            }
-          ],
-          "type": "obsSets",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
-          "coordinationValues": {
-            "obsType": "cell"
-          }
-        },
-        {
-          "fileType": "anndata-expression-matrix.zarr",
-          "options": {
-            "path": "obs/index"
-          },
-          "type": "obsIndex",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
-          "coordinationValues": {
-            "obsType": "cell"
-          }
-        },
-        {
-          "fileType": "anndata-expression-matrix.zarr",
-          "options": {
-            "path": "var/index"
-          },
-          "type": "featureIndex",
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
-          "coordinationValues": {
-            "featureType": "antigen"
-          }
-        },
-        {
-          "fileType": "anndata-expression-matrix.zarr",
-          "options": {
-            "path": "X"
-          },
-          "type": "obsFeatureMatrix",
           "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/anndata-zarr/reg1_stitched_expressions-anndata.zarr",
           "coordinationValues": {
             "obsType": "cell",
@@ -121,23 +83,21 @@
           }
         },
         {
-          "fileType": "raster.ome-tiff",
+          "fileType": "image.raster.ome-tiff",
           "options": {
             "offsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/expressions/reg1_stitched_expressions.offsets.json?token=",
             "name": "reg1_stitched_expressions",
             "usePhysicalSizeScaling": false
           },
-          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/expressions/reg1_stitched_expressions.ome.tif?token=",
-          "type": "image"
+          "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/expressions/reg1_stitched_expressions.ome.tif?token="
         },
         {
-          "fileType": "raster.ome-tiff",
+          "fileType": "obsSegmentations.raster.ome-tiff",
           "options": {
             "offsetsUrl": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/output_offsets/stitched/mask/reg1_stitched_mask.offsets.json?token=",
             "name": "reg1_stitched_mask",
             "usePhysicalSizeScaling": false
           },
-          "type": "obsSegmentations",
           "url": "https://assets.hubmapconsortium.org/13831dc529085f18ba34e7d29bd41db4/ometiff-pyramids/stitched/mask/reg1_stitched_mask.ome.tif?token=",
           "coordinationValues": {
             "obsType": "cell"
