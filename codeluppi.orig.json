@@ -12,9 +12,7 @@
           "fileType": "cells.json",
           "url": "https://s3.amazonaws.com/vitessce-data/0.0.31/master_release/linnarsson/linnarsson.cells.json",
           "coordinationValues": {
-            "embeddingType": ["PCA", "t-SNE"],
-            "hasXY": true,
-            "hasSegmentations": true
+            "embeddingType": ["PCA", "t-SNE"]
           }
         },
         {
